@@ -4,7 +4,7 @@
   "description": "> TODO: description",
   "author": "Jason Macgowan <1389531+jasonmacgowan@users.noreply.github.com>",
   "homepage": "",
-  "license": "ISC",
+  "license": "MIT",
   "main": "lib/core.js",
   "typings": "lib/core.d.ts",
   "directories": {

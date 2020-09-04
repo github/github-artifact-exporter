@@ -4,7 +4,7 @@
   "description": "> TODO: description",
   "author": "Chris McIntosh <chocrates@github.com>",
   "homepage": "https://github.com/github/github-exporter#readme",
-  "license": "ISC",
+  "license": "MIT",
   "main": "lib/index.js",
   "files": [
     "lib"
