@@ -4439,7 +4439,7 @@ export type GitActorAvatarUrlArgs = {
 export type GitHubMetadata = {
   __typename?: "GitHubMetadata";
   /** Returns a String that's a SHA of `github-services` */
-  gitHubServicesSha: Scalars["GitObjectID"];
+  githubervicesSha: Scalars["GitObjectID"];
   /** IP addresses that users connect to for git operations */
   gitIpAddresses?: Maybe<Array<Scalars["String"]>>;
   /** IP addresses that service hooks are sent from */

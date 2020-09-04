@@ -1,9 +1,9 @@
 {
-  "name": "@githubs/github-exporter-gui",
+  "name": "@github/github-exporter-gui",
   "version": "1.5.8",
   "description": "> TODO: description",
   "author": "Chris McIntosh <chocrates@github.com>",
-  "homepage": "https://github.com/githubs/github-exporter#readme",
+  "homepage": "https://github.com/github/github-exporter#readme",
   "license": "ISC",
   "main": "lib/index.js",
   "files": [
@@ -11,7 +11,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/githubs/github-exporter.git",
+    "url": "git+https://github.com/github/github-exporter.git",
     "directory": "packages/gui"
   },
   "scripts": {
@@ -24,11 +24,11 @@
     "format": "prettier --write ."
   },
   "bugs": {
-    "url": "https://github.com/githubs/github-exporter/issues"
+    "url": "https://github.com/github/github-exporter/issues"
   },
   "dependencies": {
-    "@githubs/agent": "1.0.0",
-    "@githubs/github-exporter-core": "^1.5.8",
+    "@github/agent": "1.0.0",
+    "@github/github-exporter-core": "^1.5.8",
     "@octokit/plugin-retry": "^3.0.3",
     "@octokit/rest": "^18.0.0",
     "about-window": "^1.13.4",
