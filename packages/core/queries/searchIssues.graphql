@@ -1,0 +1,55 @@
+query searchIssues(
+  $searchQuery: String!
+  $per_page: Int = 100
+  $after: String
+) {
+  search(first: $per_page, query: $searchQuery, type: ISSUE, after: $after) {
+    issueCount
+    nodes {
+      ... on Issue {
+        assignees(first: 10) {
+          nodes {
+            login
+          }
+        }
+        author {
+          login
+        }
+        comments(first: 10) {
+          nodes {
+            author {
+              login
+            }
+            body
+            createdAt
+          }
+          pageInfo {
+            endCursor
+            hasNextPage
+          }
+          totalCount
+        }
+        createdAt
+        id
+        labels(first: 100) {
+          nodes {
+            name
+          }
+        }
+        state
+        title
+        updatedAt
+        milestone {
+          title
+          state
+          url
+        }
+        closedAt
+      }
+    }
+    pageInfo {
+      endCursor
+      hasNextPage
+    }
+  }
+}

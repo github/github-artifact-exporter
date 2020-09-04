@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>github-exporter</title>
+    <!-- https://electronjs.org/docs/tutorial/security#csp-meta-tag -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="script-src 'self' 'unsafe-inline';"
+    />
+    <link rel="stylesheet" href="./spectre.min.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="panel">
+        <div class="panel-body">
+          <form id="exportform">
+            <fieldset id="exportform-fieldset">
+              <div class="columns">
+                <div class="column col-4 pt-2">
+                  <label class="form-label" for="token-input">Token:</label>
+                  <input
+                    class="form-input"
+                    type="password"
+                    name="token-input"
+                    tabindex="0"
+                    required
+                  />
+
+                  <label class="form-label" for="search-type">Action:</label>
+                  <select name="search-type" tabindex="3" disabled required>
+                    <option value="search:issues" selected
+                      >search:issues</option
+                    >
+                  </select>
+
+                  <label class="form-label" for="format-input">
+                    Export Format:
+                  </label>
+                  <select name="format-input" tabindex="6" required>
+                    <option value="CSV" selected>CSV</option>
+                    <option value="jira-csv">Jira CSV</option
+                    ><!--Will need to make sure this only shows up if they are searching issues-->
+                    <option value="JSON">JSON</option>
+                  </select>
+                </div>
+                <div class="column col-4 pt-2">
+                  <label class="form-label" for="owner-input">Owner:</label>
+                  <input
+                    class="form-input is-error"
+                    id="owner-input"
+                    type="text"
+                    name="owner-input"
+                    placeholder="eg: github"
+                    tabindex="1"
+                    required
+                  />
+                  <label class="form-label" for="search-input">Search:</label>
+                  <input
+                    class="form-input"
+                    id="search-input"
+                    type="text"
+                    value=""
+                    tabindex="4"
+                  />
+                  <br />
+                  <label class="form-label" for="base-url"
+                    >GitHub API Url:</label
+                  >
+                  <input
+                    class="form-input"
+                    id="base-url"
+                    type="text"
+                    value="https://api.github.com"
+                    tabindex="7"
+                  />
+                </div>
+                <div class="column col-4 pt-2">
+                  <label class="form-label" for="repo-input">Repository:</label>
+                  <input
+                    class="form-input"
+                    type="text"
+                    name="repo-input"
+                    tabindex="2"
+                    required
+                  />
+                  <br />
+                  <span
+                    ><a
+                      id="search-help"
+                      href="https://docs.github.com/en/github/searching-for-information-on-github/searching-issues-and-pull-requests"
+                      tabindex="5"
+                      >See Official Documentation for Search Syntax</a
+                    ></span
+                  >
+                  <br />
+                  <br />
+                  <br />
+
+                  <button class="btn" tabindex="8">Export</button>
+                </div>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+        <div id="footer" class="panel-footer">
+          <div id="error-box" class="d-invisible"></div>
+          <div id="loading" class="loading loading-lg d-invisible"></div>
+        </div>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>

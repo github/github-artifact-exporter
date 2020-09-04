@@ -1,0 +1,13 @@
+overwrite: true
+schema:
+  - https://api.github.com/graphql:
+      headers:
+        Authorization: token ${GITHUB_TOKEN}
+documents: "queries/**/*.graphql"
+generates:
+  ./src/github.ts:
+    plugins:
+      - "typescript"
+      - "typescript-operations"
+      # - "typescript-graphql-files-modules"
+      # - "typescript-document-nodes"

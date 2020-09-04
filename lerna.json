@@ -1,0 +1,12 @@
+{
+  "command": {
+    "publish": {
+      "message": "chore(release): npm publish %s",
+      "registry": "https://npm.pkg.github.com"
+    }
+  },
+  "packages": [
+    "packages/*"
+  ],
+  "version": "1.5.8"
+}

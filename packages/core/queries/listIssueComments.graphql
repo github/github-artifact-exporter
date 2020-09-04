@@ -1,0 +1,20 @@
+query listIssueComments($id: ID!, $per_page: Int = 100, $after: String) {
+  node(id: $id) {
+    ... on Issue {
+      comments(first: $per_page, after: $after) {
+        nodes {
+          author {
+            login
+          }
+          body
+          createdAt
+        }
+        pageInfo {
+          endCursor
+          hasNextPage
+        }
+        totalCount
+      }
+    }
+  }
+}

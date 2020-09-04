@@ -1,0 +1,63 @@
+{
+  "name": "@githubs/github-exporter-gui",
+  "version": "1.5.8",
+  "description": "> TODO: description",
+  "author": "Chris McIntosh <chocrates@github.com>",
+  "homepage": "https://github.com/githubs/github-exporter#readme",
+  "license": "ISC",
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/githubs/github-exporter.git",
+    "directory": "packages/gui"
+  },
+  "scripts": {
+    "pkg:linux": "echo \"Error: run tests from root\" && exit 1",
+    "pkg:macos": "npm run prepack && electron-builder --dir",
+    "pkg:windows": "npm run prepack && electron-builder -w",
+    "prepack": "rimraf lib dist && tsc -b && copyfiles -Vu 1 src/renderer/**/* lib",
+    "start": "npm run pkg:macos && electron .",
+    "lint": "eslint . --ext .ts --config .eslintrc",
+    "format": "prettier --write ."
+  },
+  "bugs": {
+    "url": "https://github.com/githubs/github-exporter/issues"
+  },
+  "dependencies": {
+    "@githubs/agent": "1.0.0",
+    "@githubs/github-exporter-core": "^1.5.8",
+    "@octokit/plugin-retry": "^3.0.3",
+    "@octokit/rest": "^18.0.0",
+    "about-window": "^1.13.4",
+    "dot-object": "^2.1.3",
+    "jsonexport": "^3.0.1",
+    "rimraf": "^3.0.2",
+    "tslib": "^2.0.0",
+    "typescript": "^3.9.6",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "copyfiles": "^2.3.0",
+    "electron": "^9.1.0",
+    "electron-builder": "^22.7.0"
+  },
+  "build": {
+    "appId": "github-exporter",
+    "productName": "github-exporter",
+    "files": [
+      "lib/**/*",
+      "package.json"
+    ],
+    "extraResources": [
+      "lib/renderer/**/*",
+      "ca/**/*"
+    ],
+    "directories": {
+      "output": "dist"
+    }
+  },
+  "gitHead": "bebf4402de364eb82675f1ea2bf90085804881ee"
+}
