@@ -1,6 +1,7 @@
 # GitHub Exporter
+_Currently in used in production_
 
-The GitHub Exporter provides a set of packages to make exporting artifacts from GitHub easier
+The GitHub Exporter is written in Typescript and provides a set of packages to make exporting artifacts from GitHub easier useful for those migrating information out of github.com
 
 Supported artifacts that you can export are
 - Issues (including filtered sub sets)
@@ -33,3 +34,9 @@ lerna clean
 lerna link
 lerna bootstrap
 ```
+
+## Contributing
+We welcome you to contribute to this project! Check out [Open Issues](https://github.com/github/github-artifact-exporter/issues) and our [`CONTRIBUTING.md`](./CONTRIBUTING.md) to jump in.
+
+## License
+[MIT](./LICENSE)
