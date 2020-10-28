@@ -21,11 +21,11 @@ See the table below for examples of `owner` and `repo`
 
 <!-- usage -->
 ```sh-session
-$ npm install -g @github/github-exporter-cli
+$ npm install -g @department-of-veterans-affairs/github-exporter-cli
 $ github-exporter COMMAND
 running command...
 $ github-exporter (-v|--version|version)
-@github/github-exporter-cli/1.5.8 darwin-x64 node-v12.18.1
+@department-of-veterans-affairs/github-exporter-cli/1.5.8 darwin-x64 node-v12.18.3
 $ github-exporter --help [COMMAND]
 USAGE
   $ github-exporter COMMAND
@@ -38,25 +38,25 @@ USAGE
 ### Exporting issues
 
 ```
-github-exporter.exe search:issues --owner github --repo caseflow --token <github-token> --since 2020-06-01 --until 2020-06-08 --format CSV > issue_export.csv
+github-exporter.exe search:issues --owner department-of-veterans-affairs --repo caseflow --token <github-token> --since 2020-06-01 --until 2020-06-08 --format CSV > issue_export.csv
 ```
 
 ### Exporting closed issues with specific labels
 
 ```
-github-exporter.exe search:issues --owner github --repo caseflow --token <github-token> --state closed --updatedSince 2020-06-01 --updatedUntil 2020-06-08 --labels "Type: Bug" --format CSV > issue_export.csv
+github-exporter.exe search:issues --owner department-of-veterans-affairs --repo caseflow --token <github-token> --state closed --updatedSince 2020-06-01 --updatedUntil 2020-06-08 --labels "Type: Bug" --format CSV > issue_export.csv
 ```
 
 ### Exporting commits
 
 ```
-github-exporter.exe repo:commits --owner github --repo caseflow --token <github-token> --since 2020-06-01 --until 2020-06-08 --format CSV > commit_export.csv
+github-exporter.exe repo:commits --owner department-of-veterans-affairs --repo caseflow --token <github-token> --since 2020-06-01 --until 2020-06-08 --format CSV > commit_export.csv
 ```
 
 ### Exporting pull requests
 
 ```
-github-exporter.exe repo:pulls --owner github --repo caseflow --token $GITHUB_TOKEN --format CSV > pulls_export.csv
+github-exporter.exe repo:pulls --owner department-of-veterans-affairs --repo caseflow --token $GITHUB_TOKEN --format CSV > pulls_export.csv
 ```
 
 # Commands
@@ -66,6 +66,7 @@ github-exporter.exe repo:pulls --owner github --repo caseflow --token $GITHUB_TO
 * [`github-exporter repo`](#github-exporter-repo)
 * [`github-exporter repo:commits`](#github-exporter-repocommits)
 * [`github-exporter repo:milestones`](#github-exporter-repomilestones)
+* [`github-exporter repo:projects`](#github-exporter-repoprojects)
 * [`github-exporter repo:pulls`](#github-exporter-repopulls)
 * [`github-exporter repo:releases`](#github-exporter-reporeleases)
 * [`github-exporter search`](#github-exporter-search)
@@ -104,7 +105,7 @@ OPTIONS
   --token=token        (required) GitHub personal access token
 ```
 
-_See code: [src/commands/repo.ts](https://github.com/github/github-exporter/blob/v1.5.8/src/commands/repo.ts)_
+_See code: [src/commands/repo.ts](https://github.com/department-of-veterans-affairs/github-exporter/blob/v1.5.8/src/commands/repo.ts)_
 
 ## `github-exporter repo:commits`
 
@@ -125,7 +126,7 @@ OPTIONS
   --until=until        search commits created before yyyy-mm-dd
 ```
 
-_See code: [src/commands/repo/commits.ts](https://github.com/github/github-exporter/blob/v1.5.8/src/commands/repo/commits.ts)_
+_See code: [src/commands/repo/commits.ts](https://github.com/department-of-veterans-affairs/github-exporter/blob/v1.5.8/src/commands/repo/commits.ts)_
 
 ## `github-exporter repo:milestones`
 
@@ -143,7 +144,26 @@ OPTIONS
   --token=token        (required) GitHub personal access token
 ```
 
-_See code: [src/commands/repo/milestones.ts](https://github.com/github/github-exporter/blob/v1.5.8/src/commands/repo/milestones.ts)_
+_See code: [src/commands/repo/milestones.ts](https://github.com/department-of-veterans-affairs/github-exporter/blob/v1.5.8/src/commands/repo/milestones.ts)_
+
+## `github-exporter repo:projects`
+
+Export GitHub Milestones for a repository
+
+```
+USAGE
+  $ github-exporter repo:projects
+
+OPTIONS
+  --baseUrl=baseUrl              [default: https://api.github.com] GitHub base url
+  --format=(JSON|CSV)            [default: JSON] export format
+  --owner=owner                  GitHub repository owner
+  --projectNumber=projectNumber  Project number from where to pull cards
+  --repo=repo                    GitHub repository name
+  --token=token                  (required) GitHub personal access token
+```
+
+_See code: [src/commands/repo/projects.ts](https://github.com/department-of-veterans-affairs/github-exporter/blob/v1.5.8/src/commands/repo/projects.ts)_
 
 ## `github-exporter repo:pulls`
 
@@ -161,7 +181,7 @@ OPTIONS
   --token=token        (required) GitHub personal access token
 ```
 
-_See code: [src/commands/repo/pulls.ts](https://github.com/github/github-exporter/blob/v1.5.8/src/commands/repo/pulls.ts)_
+_See code: [src/commands/repo/pulls.ts](https://github.com/department-of-veterans-affairs/github-exporter/blob/v1.5.8/src/commands/repo/pulls.ts)_
 
 ## `github-exporter repo:releases`
 
@@ -179,7 +199,7 @@ OPTIONS
   --token=token        (required) GitHub personal access token
 ```
 
-_See code: [src/commands/repo/releases.ts](https://github.com/github/github-exporter/blob/v1.5.8/src/commands/repo/releases.ts)_
+_See code: [src/commands/repo/releases.ts](https://github.com/department-of-veterans-affairs/github-exporter/blob/v1.5.8/src/commands/repo/releases.ts)_
 
 ## `github-exporter search`
 
@@ -197,7 +217,7 @@ OPTIONS
   --token=token        (required) GitHub personal access token
 ```
 
-_See code: [src/commands/search.ts](https://github.com/github/github-exporter/blob/v1.5.8/src/commands/search.ts)_
+_See code: [src/commands/search.ts](https://github.com/department-of-veterans-affairs/github-exporter/blob/v1.5.8/src/commands/search.ts)_
 
 ## `github-exporter search:issues`
 
@@ -209,6 +229,7 @@ USAGE
 
 OPTIONS
   --baseUrl=baseUrl            [default: https://api.github.com] GitHub base url
+  --dateFormat=dateFormat      [default: isoDateTime] Date format to use when building issue list.  Examples: mm/dd/yyyy
   --format=(JSON|CSV)          [default: JSON] export format
   --jira                       transform output into a usable format for importing to Jira
   --labels=labels              search issues with these labels (comma seperated)
@@ -223,5 +244,5 @@ OPTIONS
   --updatedUntil=updatedUntil  search issues updated before yyyy-mm-dd
 ```
 
-_See code: [src/commands/search/issues.ts](https://github.com/github/github-exporter/blob/v1.5.8/src/commands/search/issues.ts)_
+_See code: [src/commands/search/issues.ts](https://github.com/department-of-veterans-affairs/github-exporter/blob/v1.5.8/src/commands/search/issues.ts)_
 <!-- commandsstop -->

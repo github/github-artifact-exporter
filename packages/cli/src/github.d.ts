@@ -81,6 +81,28 @@ export interface Release {
   updatedAt: string;
 }
 
+export interface Card {
+  note: string;
+  content: {
+    id: string;
+    number: number;
+    title: string;
+  };
+}
+
+export interface Column {
+  name: string;
+  cards: Connection<Card>;
+}
+
+export interface RepositoryProject {
+  repository: {
+    project: {
+      columns: Connection<Column>;
+    };
+  };
+}
+
 export interface RepositoryMilestones {
   repository: {
     milestones: Connection<Milestone>;

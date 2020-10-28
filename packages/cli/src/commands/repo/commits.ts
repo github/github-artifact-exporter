@@ -89,6 +89,7 @@ export default class RepoCommits extends BaseCommand {
     let progress;
 
     // paginate through the GraphQL query until we get everything
+    debug("Pulling commits from API");
     do {
       results = await this.github.graphql(LIST_COMMITS_QUERY, {
         branch,

@@ -1,2 +1,2 @@
 declare module "jsonexport";
-declare module "@github/agent";
+declare module "@department-of-veterans-affairs/agent";

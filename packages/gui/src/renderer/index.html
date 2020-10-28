@@ -43,6 +43,16 @@
                     ><!--Will need to make sure this only shows up if they are searching issues-->
                     <option value="JSON">JSON</option>
                   </select>
+
+                  <label class="form-label" for="token-input">Date Format:</label>
+                  <input
+                    class="form-input"
+                    type="text"
+                    name="date-format"
+                    tabindex="8"
+                    value="dd/mm/yyyy"
+                    required
+                  />
                 </div>
                 <div class="column col-4 pt-2">
                   <label class="form-label" for="owner-input">Owner:</label>
@@ -51,7 +61,7 @@
                     id="owner-input"
                     type="text"
                     name="owner-input"
-                    placeholder="eg: github"
+                    placeholder="eg: department-of-veterans-affairs"
                     tabindex="1"
                     required
                   />

@@ -121,6 +121,7 @@ export default class RepoPulls extends BaseCommand {
     let progress;
 
     // paginate through the GraphQL Search query until we get everything
+    debug("Pulling pull requests from API");
     do {
       results = await this.github.graphql(query, {
         owner,
@@ -157,6 +158,7 @@ export default class RepoPulls extends BaseCommand {
   async fetchComments(
     query: string,
     pull: PullRequest,
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     progress: any
   ): Promise<void> {
     let results: CommentsList = {

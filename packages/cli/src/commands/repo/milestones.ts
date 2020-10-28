@@ -54,6 +54,7 @@ export default class RepoMilestones extends BaseCommand {
     let progress;
 
     // paginate through the GraphQL query until we get everything
+    debug("Pulling milestones from API");
     do {
       results = await this.github.graphql(LIST_RELEASES_QUERY, {
         owner,

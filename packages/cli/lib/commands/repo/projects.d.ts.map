@@ -1,0 +1,1 @@
+{"version":3,"file":"projects.d.ts","sourceRoot":"","sources":["../../../src/commands/repo/projects.ts"],"names":[],"mappings":"AAEA,OAAO,EAAE,KAAK,IAAI,SAAS,EAAE,MAAM,gBAAgB,CAAC;AAKpD,OAAO,WAAW,MAAM,YAAY,CAAC;AAwCrC,MAAM,CAAC,OAAO,OAAO,YAAa,SAAQ,WAAW;IACnD,MAAM,CAAC,WAAW,SAA+C;IAEjE,MAAM,CAAC,KAAK;;;;;;;MAKV;IAEI,GAAG;CAsGV"}

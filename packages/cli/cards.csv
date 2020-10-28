@@ -1,0 +1,226 @@
+name,cards.nodes.note,cards.nodes.content.id,cards.nodes.content.number,cards.nodes.content.title,cards.nodes.content,cards.pageInfo.hasNextPage,cards.pageInfo.endCursor,cards.totalCount
+Ideas 🤯,,MDU6SXNzdWU2OTg0Nzc5NjQ=,798,What is our next engagement with the CSS team. AGC continues to request if automation of code.gov submissions are completed.,,,,
+Ideas 🤯,,MDU6SXNzdWU3MDQ1OTg0Nzk=,824,Adv Sec onboarding path,,,,
+Ideas 🤯,,MDU6SXNzdWU3MDQ1OTk2Mzc=,825,"Establish ""Success Criteria"" for Advanced Security",,,,
+Ideas 🤯,,MDU6SXNzdWU3MDQ1OTk5Mjg=,827,Build out Advanced Security Roadmap at the VA,,,,
+Ideas 🤯,,MDU6SXNzdWU3MDQ1OTk3NTY=,826,Will teams be signed up by leaders or will this be by volunteer basis,,,,
+Ideas 🤯,,MDU6SXNzdWU3MDU4Mjc3MzQ=,831,Actions user policy and audit,,,,
+Ideas 🤯,"Work on our own migration tool for RTC to GIT based on work by Chris Bell in the VA who based his work off of this:
+
+https://bitbucket.org/Ralf_Jonas/jazzrtc2g-t/src/master/Migration.pl
+
+He's seeking approval from his manager to share his enhancements.",MDU6SXNzdWU3MDU4Mjc3MzQ=,831,Actions user policy and audit,,,,
+Ideas 🤯,"Work on our own migration tool for RTC to GIT based on work by Chris Bell in the VA who based his work off of this:
+
+https://bitbucket.org/Ralf_Jonas/jazzrtc2g-t/src/master/Migration.pl
+
+He's seeking approval from his manager to share his enhancements.",MDU6SXNzdWU2MTYxODcxMTA=,335,Follow up on EVR Migration,,false,OA,8
+Deep Freeze (not ready) 🥶,,MDU6SXNzdWU2OTgwNTQ0ODA=,793,AFTER OCT 1: Consolidate and Update transition-to-github Issue Templates,,,,
+Deep Freeze (not ready) 🥶,,MDU6SXNzdWU1NzIyOTE5MDk=,209,Revisit after Ent. Grid: Automate notifying VA Slack users about GitHub.com outages,,,,
+Deep Freeze (not ready) 🥶,,MDU6SXNzdWU2OTY5NjgxMTQ=,791,Enable Adv. Sec. for all existing repos?,,,,
+Deep Freeze (not ready) 🥶,,MDU6SXNzdWU1ODYxNjA3OTA=,239,Ask VA to bundle their certificate authorities with cacerts,,,,
+Deep Freeze (not ready) 🥶,,MDU6SXNzdWU2ODczNjExNTg=,756,TRM availability for GitHub phone app,,,,
+Deep Freeze (not ready) 🥶,,MDU6SXNzdWU2NzYxNDgzMTg=,687,Investigate inviting va users in new user tickets automatically,,,,
+Deep Freeze (not ready) 🥶,,MDU6SXNzdWU2NDUwMjkyODU=,541,Self hosted runner webinar,,,,
+Deep Freeze (not ready) 🥶,,MDU6SXNzdWU2NDUwMTg0MzE=,538,ChatOps Webinar,,,,
+Deep Freeze (not ready) 🥶,,MDU6SXNzdWU2NDUwMDM5NDA=,532,How should we integrate GitHub and Xray? ,,,,
+Deep Freeze (not ready) 🥶,Migrate EC to .com as part of long-term VA strategy,MDU6SXNzdWU2NDUwMDM5NDA=,532,How should we integrate GitHub and Xray? ,,,,
+Deep Freeze (not ready) 🥶,Migrate EC to .com as part of long-term VA strategy,MDU6SXNzdWU2NDU4MTE2NTM=,544,Investigate our ability to use security features to benefit VistA and MUMPS code,,,,
+Deep Freeze (not ready) 🥶,Migrate EC to .com as part of long-term VA strategy,MDU6SXNzdWU2MjkyMjIwMjk=,392,Clean up GitHub teams at the VA,,,,
+Deep Freeze (not ready) 🥶,Migrate EC to .com as part of long-term VA strategy,MDU6SXNzdWU2MzczMTk0MTI=,483,Tools for the auditing of policies,,,,
+Deep Freeze (not ready) 🥶,Migrate EC to .com as part of long-term VA strategy,MDU6SXNzdWU2MTYxOTY3NDQ=,343,Investigate logging in GitHub Enterprise to GitHub.com Migrations,,,,
+Deep Freeze (not ready) 🥶,Upstream stale issue action changes: https://github.com/ActionsDesk/stale/issues/5,MDU6SXNzdWU2MTYxOTY3NDQ=,343,Investigate logging in GitHub Enterprise to GitHub.com Migrations,,,,
+Deep Freeze (not ready) 🥶,https://github.com/department-of-veterans-affairs/github-user-requests/pull/2977,MDU6SXNzdWU2MTYxOTY3NDQ=,343,Investigate logging in GitHub Enterprise to GitHub.com Migrations,,,,
+Deep Freeze (not ready) 🥶," Requesting visual presentation of GitHub - VA tool integrations (Jira, Rally, Jenkins, etc) by 6/8. This can be the 1st page for Issue #283
+https://github.com/githubcustomers/department-of-veterans-affairs/issues/383
+
+Waiting on @heatheroh to get us a list of Tools from Ablevets/Angela
+
+@zkoppert interested in this one",MDU6SXNzdWU2MTYxOTY3NDQ=,343,Investigate logging in GitHub Enterprise to GitHub.com Migrations,,false,MTc,17
+Prioritized Backlog 🔢,,MDU6SXNzdWU2OTg0NjIwMTM=,795,Prep for Eclipse & GitHub Webinar,,,,
+Prioritized Backlog 🔢,,MDU6SXNzdWU2OTEyODA0ODg=,776,Advanced Security Email Campaign,,,,
+Prioritized Backlog 🔢,,MDU6SXNzdWU2OTg0NjQ1MjQ=,797,Prep for Most used VA Automation Webinar,,,,
+Prioritized Backlog 🔢,,MDU6SXNzdWU3MDM4OTg5OTQ=,819,Hackathon Swag,,,,
+Prioritized Backlog 🔢,,MDU6SXNzdWU2ODU2NTQ4MDA=,743,ServiceNow Tier 1 Support Documentation,,,,
+Prioritized Backlog 🔢,,MDU6SXNzdWU2ODMwODQxOTQ=,733,Set up meeting with Angela/Theresa/Chris about code.gov scores and what we can do specifically (not much),,,,
+Prioritized Backlog 🔢,,MDU6SXNzdWU3MDIyMTczMjg=,806,GHAS Hackathon,,,,
+Prioritized Backlog 🔢,,MDU6SXNzdWU2ODMwMjMxMDI=,729,Team post: Advanced Security demoed and sold,,,,
+Prioritized Backlog 🔢,,MDU6SXNzdWU3MDM5MDU5MzY=,820,Close out roadmap 1 support,,,,
+Prioritized Backlog 🔢,"https://github.com/department-of-veterans-affairs/github-exporter/issues/42
+",MDU6SXNzdWU3MDM5MDU5MzY=,820,Close out roadmap 1 support,,,,
+Prioritized Backlog 🔢,"https://github.com/department-of-veterans-affairs/github-exporter/issues/42
+",MDU6SXNzdWU2OTY5NjM1OTE=,790,"Build dashboards on Migrations, Adv Sec, InnerSource, Automation",,,,
+Prioritized Backlog 🔢,"https://github.com/department-of-veterans-affairs/github-exporter/issues/42
+",MDU6SXNzdWU2OTEzMTE1MDc=,777,Security Community of Practice,,,,
+Prioritized Backlog 🔢,"https://github.com/department-of-veterans-affairs/github-exporter/issues/42
+",MDU6SXNzdWU2OTExNDAzNTk=,772,Common intake workflow with DOTS,,,,
+Prioritized Backlog 🔢,https://github.com/department-of-veterans-affairs/github-exporter/issues/41,MDU6SXNzdWU2OTExNDAzNTk=,772,Common intake workflow with DOTS,,,,
+Prioritized Backlog 🔢,https://github.com/department-of-veterans-affairs/va-code-project-template/issues/15,MDU6SXNzdWU2OTExNDAzNTk=,772,Common intake workflow with DOTS,,,,
+Prioritized Backlog 🔢,https://github.com/department-of-veterans-affairs/va-code-project-template/issues/15,MDU6SXNzdWU2OTExNDY3MTc=,773,Unified Proposal with DOTS to AGC,,,,
+Prioritized Backlog 🔢,https://github.com/department-of-veterans-affairs/va-product-documentation-template/issues/27,MDU6SXNzdWU2OTExNDY3MTc=,773,Unified Proposal with DOTS to AGC,,,,
+Prioritized Backlog 🔢,https://github.com/department-of-veterans-affairs/va-product-documentation-template/issues/27,MDU6SXNzdWU2ODEzNzAyMzY=,722,Create VA repo to work on code.json POC,,,,
+Prioritized Backlog 🔢,https://github.com/department-of-veterans-affairs/va-product-documentation-template/issues/27,MDU6SXNzdWU2NjkxODAwMDA=,657,"Enhance export-cli to dump all the datastreams into one (releases, commits, milestones, pull requests)",,,,
+Prioritized Backlog 🔢,https://github.com/department-of-veterans-affairs/va-product-documentation-template/issues/27,MDU6SXNzdWU2MzcwNDA4MTc=,478,`transition-to-github` Stale Bot bug,,,,
+Prioritized Backlog 🔢,https://github.com/department-of-veterans-affairs/va-product-documentation-template/issues/27,MDU6SXNzdWU2OTIzMzY2NzY=,781,Video on Jenkins and GHAS,,,,
+Prioritized Backlog 🔢,https://github.com/department-of-veterans-affairs/va-product-documentation-template/issues/27,MDU6SXNzdWU2ODAyNDUxMDE=,713,Add team as read-only to every repository,,,,
+Prioritized Backlog 🔢,https://github.com/department-of-veterans-affairs/va-product-documentation-template/issues/27,MDU6SXNzdWU2NzI4ODkwMzY=,670,IDEA: TL;DR on Security Tab in GitHub,,,,
+Prioritized Backlog 🔢,https://github.com/department-of-veterans-affairs/va-product-documentation-template/issues/27,MDU6SXNzdWU2NzAxMTAzNTM=,662,Automating discovery of PII,,,,
+Prioritized Backlog 🔢,https://github.com/department-of-veterans-affairs/va-product-documentation-template/issues/27,MDU6SXNzdWU2MTg1MDc5NTY=,355,Idea: need for a Eclipse and Git Setup to help developers reduce context switching during reviews,,,,
+Prioritized Backlog 🔢,https://github.com/department-of-veterans-affairs/va-product-documentation-template/issues/27,MDU6SXNzdWU2MzQ3NTAxNjU=,405,Allow querying of organization audit log by audit type,,,,
+Prioritized Backlog 🔢,https://github.com/department-of-veterans-affairs/va-product-documentation-template/issues/27,MDU6SXNzdWU2NTQzMzA4MTI=,591,Clean up Actions Desk,,,,
+Prioritized Backlog 🔢,https://github.com/department-of-veterans-affairs/supreme-robot/issues/23,MDU6SXNzdWU2NTQzMzA4MTI=,591,Clean up Actions Desk,,,,
+Prioritized Backlog 🔢,https://github.com/department-of-veterans-affairs/supreme-robot/issues/23,MDU6SXNzdWU2OTg0ODQyMzM=,799,"Consolidate Devops working group repo, github-user-requests repo, transition to github",,,,
+Prioritized Backlog 🔢,https://github.com/department-of-veterans-affairs/supreme-robot/issues/23,MDU6SXNzdWU2Nzg1MzUyNTQ=,706,Automate code.gov json file delivery,,,,
+Prioritized Backlog 🔢,https://github.com/department-of-veterans-affairs/supreme-robot/issues/23,MDU6SXNzdWU2NDUwMDQzMTc=,533,Would the JIRA Validator be of any use to the VA?,,,,
+Prioritized Backlog 🔢,"zenhub and jira integration
+https://github.com/department-of-veterans-affairs/github-user-requests/issues/2438",MDU6SXNzdWU2NDUwMDQzMTc=,533,Would the JIRA Validator be of any use to the VA?,,,,
+Prioritized Backlog 🔢,Determine next steps for adv security pilot program,MDU6SXNzdWU2NDUwMDQzMTc=,533,Would the JIRA Validator be of any use to the VA?,,,,
+Prioritized Backlog 🔢,Email follow up for Security webinar done manually,MDU6SXNzdWU2NDUwMDQzMTc=,533,Would the JIRA Validator be of any use to the VA?,,false,MzQ,34
+Doing this Week (Committed) 🤝,,MDU6SXNzdWU2NzYxNDA2MjU=,686,Investigate re-instating permissions with /invite if the user previously existed,,,,
+Doing this Week (Committed) 🤝,,MDU6SXNzdWU2NzQ1Nzg0MTU=,679,README support for teams to improve their landing page on github,,,,
+Doing this Week (Committed) 🤝,,MDU6SXNzdWU2OTEyNzMxMjM=,774,Advanced Security Webinar Prep,,false,Mw,3
+In Progress 🏃‍♂️,,MDU6SXNzdWU3MDM3MDMwMTE=,815,Create a report from Hackathon Issues.,,,,
+In Progress 🏃‍♂️,,MDU6SXNzdWU2NzQ1NTgyOTY=,677,Let's write a team post!,,,,
+In Progress 🏃‍♂️,,MDU6SXNzdWU2Nzk0MjYwNjE=,712,VA CASE Migration,,,,
+In Progress 🏃‍♂️,,MDU6SXNzdWU2ODMwMjQ3OTE=,731,Team post: Migrations from RTC,,,,
+In Progress 🏃‍♂️,,MDU6SXNzdWU2ODMwMjIzMjA=,728,Team post: GitHub enabling success within the VA,,,,
+In Progress 🏃‍♂️,,MDU6SXNzdWU2MTYxODc4OTY=,337,Automate gathering metrics for roadmap goals,,,,
+In Progress 🏃‍♂️,,MDU6SXNzdWU2NDUwMDQ1NDk=,534,Consider open sourcing issue-exporter. ,,,,
+In Progress 🏃‍♂️,,MDU6SXNzdWU2NzUwOTIwMTg=,682,Investigate a report or tool to report on users without a verified domain email,,,,
+In Progress 🏃‍♂️,,MDU6SXNzdWU2ODMwMjM5NTA=,730,Team post: Actions at the VA 6 months later,,,,
+In Progress 🏃‍♂️,,MDU6SXNzdWU2ODI4NzQ1Njk=,726,SECRET PROJECT,,,,
+In Progress 🏃‍♂️,https://github.com/department-of-veterans-affairs/github-exporter/issues/45,MDU6SXNzdWU2ODI4NzQ1Njk=,726,SECRET PROJECT,,,,
+In Progress 🏃‍♂️,"https://github.com/department-of-veterans-affairs/github-exporter/issues/43
+",MDU6SXNzdWU2ODI4NzQ1Njk=,726,SECRET PROJECT,,,,
+In Progress 🏃‍♂️,"https://github.com/department-of-veterans-affairs/github-exporter/issues/43
+",MDU6SXNzdWU2ODI4MDI4MTU=,725,Meeting notes: GitHub Onboarding VA,,false,MTM,13
+Needs Review 👀,,MDU6SXNzdWU2ODI4NzUzNzk=,727,Recurring job to run inactive users report,,,,
+Needs Review 👀,,MDU6SXNzdWU3MDM4ODc0MzI=,818,DMLSS Migration,,,,
+Needs Review 👀,,MDU6SXNzdWU2OTg0NjMwNDE=,796,Prep for Visual Studio & GitHub Webinar,,,,
+Needs Review 👀,,MDU6SXNzdWU2Nzc5MDcwNDg=,702,User invite auditing admin guide (how to),,false,NA,4
+Blocked 🛑,https://github.com/department-of-veterans-affairs/github-exporter/issues/44,,,,,,,
+Blocked 🛑,https://github.com/department-of-veterans-affairs/github-exporter/issues/44,MDU6SXNzdWU2NDUwMDYzNDU=,536,Unable to publish helm tarballs to GitHub Package Repository - DOTS Request,,,,
+Blocked 🛑,https://github.com/department-of-veterans-affairs/github-exporter/issues/44,MDU6SXNzdWU2NTAxMjI4NDY=,569,Netskope Security <> GitHub Integration,,,,
+Blocked 🛑,https://github.com/department-of-veterans-affairs/github-user-requests/issues/3461,MDU6SXNzdWU2NTAxMjI4NDY=,569,Netskope Security <> GitHub Integration,,false,NA,4
+Done 🥳,,MDU6SXNzdWU2NzYzODUxMzM=,691,Create process for adding domains to allowlist for automatically inviting users,,,,
+Done 🥳,,MDU6SXNzdWU2NzYzODczNTA=,692,Enhance add user action to accept a list of domains in allowlist,,,,
+Done 🥳,,MDU6SXNzdWU3MDQ2NTc4NDU=,828,TBAA Migration,,,,
+Done 🥳,,MDU6SXNzdWU2OTIyODYwNDU=,780,BFFS Migration,,,,
+Done 🥳,,MDU6SXNzdWU2OTIyODU5NTE=,779,Federal Case Mgmt Migration,,,,
+Done 🥳,,MDU6SXNzdWU3MDM4ODY5MDE=,817,MASS Migration,,,,
+Done 🥳,,MDU6SXNzdWU2OTEyNzg2NDQ=,775,Advanced Security Slack marketing,,,,
+Done 🥳,,MDU6SXNzdWU2ODM4Njc0ODA=,736,Follow up with Richard about SSL issues with VS,,,,
+Done 🥳,,MDU6SXNzdWU2Mzk3MzA3MTg=,506,VA Monitoring for user invitations,,,,
+Done 🥳,,MDU6SXNzdWU2NDgzNTQ0ODc=,560,"Contact users on the ""using actions"" list and solicit engagements for advancing their CI/CD and security consultations",,,,
+Done 🥳,,MDU6SXNzdWU2NzUwOTExNTc=,681,Gather Org Emails in usage report,,,,
+Done 🥳,,MDU6SXNzdWU2NTg1NDY5MjQ=,622,JenkinsX and forking policy,,,,
+Done 🥳,,MDU6SXNzdWU2Nzg3MTc2NzM=,709,Starting a new Community of Practice,,,,
+Done 🥳,https://github.com/department-of-veterans-affairs/export-issues/issues/19,MDU6SXNzdWU2Nzg3MTc2NzM=,709,Starting a new Community of Practice,,,,
+Done 🥳,https://github.com/department-of-veterans-affairs/export-issues/issues/19,MDU6SXNzdWU2Mzk4MTQ5MjE=,509,Auto-assign team when GitHub Access Request cannot auto-invite user,,,,
+Done 🥳,https://github.com/department-of-veterans-affairs/export-issues/issues/19,MDU6SXNzdWU2NDUwMDcwMDU=,537,Automate kicking off Fortify scans in GH Actions,,,,
+Done 🥳,https://github.com/department-of-veterans-affairs/github-exporter/issues/46,MDU6SXNzdWU2NDUwMDcwMDU=,537,Automate kicking off Fortify scans in GH Actions,,,,
+Done 🥳,https://github.com/department-of-veterans-affairs/github-exporter/issues/46,MDU6SXNzdWU2NTc1MDY4OTc=,609,Security Demo for Angela,,,,
+Done 🥳,https://github.com/department-of-veterans-affairs/github-exporter/issues/46,MDU6SXNzdWU2NDc4MzQ4NDA=,551,Security Playbook: Code Scanning,,,,
+Done 🥳,https://github.com/department-of-veterans-affairs/github-exporter/issues/46,MDU6SXNzdWU2NDc4Mzc1NzI=,555,Security Playbook: Remediation,,,,
+Done 🥳,https://github.com/department-of-veterans-affairs/github-exporter/issues/46,MDU6SXNzdWU2ODYzMDUxNTM=,746,Add comment-commands to github-inactive-user-mentions repo,,,,
+Done 🥳,Update onboarding automation to auto approve users.,MDU6SXNzdWU2ODYzMDUxNTM=,746,Add comment-commands to github-inactive-user-mentions repo,,,,
+Done 🥳,Update onboarding automation to auto approve users.,MDU6SXNzdWU2NTAyNjIzNzQ=,573,Automate /kick users after 90 days of no activity in the org,,,,
+Done 🥳,Update onboarding automation to auto approve users.,MDU6SXNzdWU2NzQ1ODY5NjU=,680,Need service account for Rational -- potentially working with AbleVets on running this migration puppy in Jenkins,,,,
+Done 🥳,Update onboarding automation to auto approve users.,MDU6SXNzdWU2Nzc5ODQ3ODE=,704,Write a small action to close issues created by perseverance template,,,,
+Done 🥳,Update onboarding automation to auto approve users.,MDU6SXNzdWU2NzQ1Njg2OTQ=,678,Modify github-handbook to change language for making repos public,,,,
+Done 🥳,Update onboarding automation to auto approve users.,MDU6SXNzdWU2OTgxNDEyNjQ=,794,Create one TLS guide to rule them all,,,,
+Done 🥳,Update onboarding automation to auto approve users.,MDU6SXNzdWU2NjQ0MDM0MjA=,635,Recent GitHub Features for Angela,,,,
+Done 🥳,Update onboarding automation to auto approve users.,MDU6SXNzdWU2NDc4MzUyMjk=,552,Security Playbook: Secret Scanning,,,,
+Done 🥳,Update onboarding automation to auto approve users.,MDU6SXNzdWU2NzIxMzY0MTQ=,663,Merging Slack channels in VA OIT DevOps workspace,,,,
+Done 🥳,https://github.com/department-of-veterans-affairs/transition-to-GitHub/issues/913,MDU6SXNzdWU2NzIxMzY0MTQ=,663,Merging Slack channels in VA OIT DevOps workspace,,,,
+Done 🥳,https://github.com/department-of-veterans-affairs/transition-to-GitHub/issues/913,MDU6SXNzdWU2NzYxNTk4NTg=,688,Create Issue Template for keeping account access in github-user-requests,,,,
+Done 🥳,https://github.com/department-of-veterans-affairs/transition-to-GitHub/issues/913,MDU6SXNzdWU2ODc0MzQxNzI=,760,GHAS Strategy Session,,,,
+Done 🥳,https://github.com/department-of-veterans-affairs/transition-to-GitHub/issues/913,MDU6SXNzdWU2NTAxNzI1NTk=,570,Zack's items while Heather is out 7/6-10,,,,
+Done 🥳,https://github.com/department-of-veterans-affairs/transition-to-GitHub/issues/913,MDU6SXNzdWU2NjkxODc0NDQ=,658,Readiness criteria for GHAS,,,,
+Done 🥳,"OSCIF Migration, Part 1 of 1000000 @zkoppert @chocrates
+
+https://github.com/department-of-veterans-affairs/transition-to-GitHub/issues/534",MDU6SXNzdWU2NjkxODc0NDQ=,658,Readiness criteria for GHAS,,,,
+Done 🥳,"OSCIF Migration, Part 1 of 1000000 @zkoppert @chocrates
+
+https://github.com/department-of-veterans-affairs/transition-to-GitHub/issues/534",MDU6SXNzdWU2ODEzNjE0NTI=,721,Get Code.gov repo scoring schema and weights,,,,
+Done 🥳,"OSCIF Migration, Part 1 of 1000000 @zkoppert @chocrates
+
+https://github.com/department-of-veterans-affairs/transition-to-GitHub/issues/534",MDU6SXNzdWU2NDU4MTQ5OTY=,545,Prepare a list of feature references and prerequisites needed for a Code Scanning Pilot,,,,
+Done 🥳,"OSCIF Migration, Part 1 of 1000000 @zkoppert @chocrates
+
+https://github.com/department-of-veterans-affairs/transition-to-GitHub/issues/534",MDU6SXNzdWU2NDc4MzU1NzM=,553,Security Playbook: Security Policy,,,,
+Done 🥳,"OSCIF Migration, Part 1 of 1000000 @zkoppert @chocrates
+
+https://github.com/department-of-veterans-affairs/transition-to-GitHub/issues/534",MDU6SXNzdWU2NDE2MDQzMDg=,518,Mike B Code Scanning Pilot Week 3,,,,
+Done 🥳,"OSCIF Migration, Part 1 of 1000000 @zkoppert @chocrates
+
+https://github.com/department-of-veterans-affairs/transition-to-GitHub/issues/534",MDU6SXNzdWU2Nzc3NzY4MTM=,699,Create introduction slides for Communities of Practice meeting,,,,
+Done 🥳,"OSCIF Migration, Part 1 of 1000000 @zkoppert @chocrates
+
+https://github.com/department-of-veterans-affairs/transition-to-GitHub/issues/534",MDU6SXNzdWU2MzQ3NTg5Njc=,406,Determine best ways to determine user engagement,,,,
+Done 🥳,"OSCIF Migration, Part 1 of 1000000 @zkoppert @chocrates
+
+https://github.com/department-of-veterans-affairs/transition-to-GitHub/issues/534",MDU6SXNzdWU2NDUwMjAzNTg=,539,Document PII removal process,,,,
+Done 🥳,"OSCIF Migration, Part 1 of 1000000 @zkoppert @chocrates
+
+https://github.com/department-of-veterans-affairs/transition-to-GitHub/issues/534",MDU6SXNzdWU2NTI1MzIxNzA=,578,Revise GitHub Diagram,,,,
+Done 🥳,"OSCIF Migration, Part 1 of 1000000 @zkoppert @chocrates
+
+https://github.com/department-of-veterans-affairs/transition-to-GitHub/issues/534",MDU6SXNzdWU2NjY0NjQxNzk=,646,Record security webinar: security policy and advisories,,,,
+Done 🥳,https://github.com/department-of-veterans-affairs/github-exporter/issues/38,MDU6SXNzdWU2NjY0NjQxNzk=,646,Record security webinar: security policy and advisories,,,,
+Done 🥳,Check for readiness to migrate: https://github.com/department-of-veterans-affairs/product-lines-engagement/issues/18,MDU6SXNzdWU2NjY0NjQxNzk=,646,Record security webinar: security policy and advisories,,,,
+Done 🥳,Check for readiness to migrate: https://github.com/department-of-veterans-affairs/product-lines-engagement/issues/18,MDU6SXNzdWU2NjQ2OTA4NjM=,636,Actions Hackathon at the VA,,,,
+Done 🥳,Check for readiness to migrate: https://github.com/department-of-veterans-affairs/product-lines-engagement/issues/18,MDU6SXNzdWU2MjY2Mzk1Njc=,379,Create Survey Templates ,,,,
+Done 🥳,https://github.com/department-of-veterans-affairs/github-exporter/issues/39,MDU6SXNzdWU2MjY2Mzk1Njc=,379,Create Survey Templates ,,,,
+Done 🥳,https://github.com/department-of-veterans-affairs/github-exporter/issues/39,MDU6SXNzdWU2NTQyMTUxNzI=,587,All new repositories to have enabled security features by default,,,,
+Done 🥳,https://github.com/department-of-veterans-affairs/github-exporter/issues/39,MDU6SXNzdWU2OTAyNzcyNDk=,769,Mission: Onboard Thomas,,,,
+Done 🥳,https://github.com/department-of-veterans-affairs/github-exporter/issues/39,MDU6SXNzdWU2NTQzMzM1NDc=,593,User tutorial/training on the Export Issues project,,,,
+Done 🥳,https://github.com/department-of-veterans-affairs/github-exporter/issues/39,MDU6SXNzdWU2NjY0NjQxMTQ=,645,Record security webinar: dependabot alerts,,,,
+Done 🥳,https://github.com/department-of-veterans-affairs/github-exporter/issues/39,MDU6SXNzdWU2ODMwMjU4MDU=,732,Team post: FOIA VistA case study,,,,
+Done 🥳,https://github.com/department-of-veterans-affairs/github-exporter/issues/39,MDU6SXNzdWU2NDgzNTUyMjc=,561,Offer services to VAEC admins,,,,
+Done 🥳,https://github.com/department-of-veterans-affairs/github-exporter/issues/39,MDU6SXNzdWU2ODczNjE5NDE=,757,Evaluate the 75-ish RTC repositories for source code use,,,,
+Done 🥳,https://github.com/department-of-veterans-affairs/github-exporter/issues/40,MDU6SXNzdWU2ODczNjE5NDE=,757,Evaluate the 75-ish RTC repositories for source code use,,,,
+Done 🥳,https://github.com/department-of-veterans-affairs/github-user-requests/issues/4168,MDU6SXNzdWU2ODczNjE5NDE=,757,Evaluate the 75-ish RTC repositories for source code use,,,,
+Done 🥳,https://github.com/department-of-veterans-affairs/github-exporter/issues/20,MDU6SXNzdWU2ODczNjE5NDE=,757,Evaluate the 75-ish RTC repositories for source code use,,,,
+Done 🥳,https://github.com/department-of-veterans-affairs/github-exporter/issues/20,MDU6SXNzdWU2MzQ3NDQ2OTE=,402,Gather Organization Storage Usage,,,,
+Done 🥳,https://github.com/department-of-veterans-affairs/github-exporter/issues/30,MDU6SXNzdWU2MzQ3NDQ2OTE=,402,Gather Organization Storage Usage,,,,
+Done 🥳,https://github.com/department-of-veterans-affairs/github-exporter/issues/30,MDU6SXNzdWU2NDk5ODQ4NzI=,566,VAEC GitHub Enterprise Server configuration & architecture,,,,
+Done 🥳,https://github.com/department-of-veterans-affairs/github-exporter/issues/30,MDU6SXNzdWU2OTIyODUyNDg=,778,TRM Migration,,,,
+Done 🥳,https://github.com/department-of-veterans-affairs/github-exporter/issues/34,MDU6SXNzdWU2OTIyODUyNDg=,778,TRM Migration,,,,
+Done 🥳,https://github.com/department-of-veterans-affairs/github-exporter/issues/34,MDU6SXNzdWU2NjY0NjQwNzk=,644,Record security webinar: code scanning alerts,,,,
+Done 🥳,https://github.com/department-of-veterans-affairs/github-exporter/issues/34,MDU6SXNzdWU2NDA3OTQ4MzA=,514,Roadmap Review action item from #511,,,,
+Done 🥳,https://github.com/department-of-veterans-affairs/github-exporter/issues/34,MDU6SXNzdWU2NTQzMzM1MDE=,592,User Experience Testing on the Export Issues GUI,,,,
+Done 🥳,https://github.com/department-of-veterans-affairs/github-exporter/issues/34,MDU6SXNzdWU2NTg1NDA2Njk=,621,Set up domain verification for the `department-of-veterans-affairs` organization.  This is different than what we did for connect.,,,,
+Done 🥳,https://github.com/department-of-veterans-affairs/github-exporter/issues/34,MDU6SXNzdWU2OTAzMzYxMDc=,770,Meeting notes: Services Weekly Sync 9/1/20,,,,
+Done 🥳,https://github.com/department-of-veterans-affairs/github-exporter/issues/34,MDU6SXNzdWU2NTgzOTcyNjc=,619,Characteristics of users who haven't logged in in 90 days,,,,
+Done 🥳,https://github.com/department-of-veterans-affairs/github-exporter/issues/34,MDU6SXNzdWU2NjY0NjM4MDY=,643,Record security webinar: detected secrets,,,,
+Done 🥳,https://github.com/department-of-veterans-affairs/github-exporter/issues/34,MDU6SXNzdWU2NDUwMjA5OTU=,540,Audit user invites,,,,
+Done 🥳,https://github.com/department-of-veterans-affairs/github-exporter/issues/34,MDU6SXNzdWU2NTg1NDkzMDM=,623,Verify domain for va.gov on .com,,,,
+Done 🥳,https://github.com/department-of-veterans-affairs/github-exporter/issues/34,MDU6SXNzdWU2NTQyMzIxMzQ=,588,master to main epic,,,,
+Done 🥳,https://github.com/department-of-veterans-affairs/github-exporter/issues/34,MDU6SXNzdWU2NjY0Mzk5MjA=,642,Improve invite handling for existing users,,,,
+Done 🥳,https://github.com/department-of-veterans-affairs/github-exporter/issues/34,MDU6SXNzdWU2NDc4Mzg4NTA=,556,Offer and Record Security Webinar,,,,
+Done 🥳,https://github.com/department-of-veterans-affairs/github-exporter/issues/34,MDU6SXNzdWU2NjQ4MTgwNDE=,637,Increase code.gov scores related to CSS group,,,,
+Done 🥳,https://github.com/department-of-veterans-affairs/github-exporter/issues/34,MDU6SXNzdWU2NjkxNTI1ODM=,656,"Advertise the export-issues tutorial on Slack (@AGC), github-handbook, and share with DOTS",,,,
+Done 🥳,CSS Migration: Completed with details at https://github.com/department-of-veterans-affairs/CSS-temp-migration/projects/1 @chocrates @zkoppert,MDU6SXNzdWU2NjkxNTI1ODM=,656,"Advertise the export-issues tutorial on Slack (@AGC), github-handbook, and share with DOTS",,,,
+Done 🥳,"https://github.com/department-of-veterans-affairs/github-user-requests/issues/3087
+
+https://github.com/githubcustomers/department-of-veterans-affairs/issues/628",MDU6SXNzdWU2NjkxNTI1ODM=,656,"Advertise the export-issues tutorial on Slack (@AGC), github-handbook, and share with DOTS",,,,
+Done 🥳,"Create a value delivered blurb (sec. consultations, CI consultations, etc.) to post in slack and advertise to Angela, Delia, etc.",MDU6SXNzdWU2NjkxNTI1ODM=,656,"Advertise the export-issues tutorial on Slack (@AGC), github-handbook, and share with DOTS",,,,
+Done 🥳,"Create a value delivered blurb (sec. consultations, CI consultations, etc.) to post in slack and advertise to Angela, Delia, etc.",MDU6SXNzdWU2NDc4MzY5NTk=,554,Security Playbook: Security Advisories,,,,
+Done 🥳,https://github.com/department-of-veterans-affairs/github-onboarding/issues/108,MDU6SXNzdWU2NDc4MzY5NTk=,554,Security Playbook: Security Advisories,,,,
+Done 🥳,https://github.com/department-of-veterans-affairs/github-onboarding/issues/108,MDU6SXNzdWU2NTQzMzQwMjE=,595,Migration Retro: VADIR,,,,
+Done 🥳,https://github.com/department-of-veterans-affairs/github-onboarding/issues/108,MDU6SXNzdWU2NDc4MzQ0MzU=,550,Security Playbook: Dependency Vulnerabilities,,,,
+Done 🥳,https://github.com/department-of-veterans-affairs/github-onboarding/issues/108,MDU6SXNzdWU2NDUwMDUyNjQ=,535,How can we drive consistent usage of GitHub Releases at the VA,,,,
+Done 🥳,https://github.com/department-of-veterans-affairs/github-onboarding/issues/108,MDU6SXNzdWU2NjkxODg3ODM=,659,Identify teams for advanced security,,,,
+Done 🥳,https://github.com/department-of-veterans-affairs/github-onboarding/issues/108,MDU6SXNzdWU2OTAyNzIyOTU=,768,Input Request: August Status Report,,,,
+Done 🥳,https://github.com/department-of-veterans-affairs/transition-to-GitHub/issues/938,MDU6SXNzdWU2OTAyNzIyOTU=,768,Input Request: August Status Report,,,,
+Done 🥳,https://github.com/department-of-veterans-affairs/transition-to-GitHub/issues/938,MDU6SXNzdWU2NDgzNjM1OTA=,562,GitHub Admin Documentation EPIC,,,,
+Done 🥳,https://github.com/department-of-veterans-affairs/transition-to-GitHub/issues/938,MDU6SXNzdWU2NDA0ODI1NTI=,510,Develop Export Issues GUI,,,,
+Done 🥳,https://github.com/department-of-veterans-affairs/transition-to-GitHub/issues/849,MDU6SXNzdWU2NDA0ODI1NTI=,510,Develop Export Issues GUI,,,,
+Done 🥳,https://github.com/department-of-veterans-affairs/transition-to-GitHub/issues/919,MDU6SXNzdWU2NDA0ODI1NTI=,510,Develop Export Issues GUI,,,,
+Done 🥳,https://github.com/department-of-veterans-affairs/transition-to-GitHub/issues/919,MDU6SXNzdWU2NTQzMzM3MzA=,594,Deliver inactive/active script to RPM team,,,,
+Done 🥳,https://github.com/department-of-veterans-affairs/transition-to-GitHub/issues/919,MDU6SXNzdWU2NTA2OTM2MzY=,574,Migration tools: Would love to see this script,,,,
+Done 🥳,https://github.com/department-of-veterans-affairs/transition-to-GitHub/issues/919,MDU6SXNzdWU2ODk1NjA0OTI=,766,Get open source code sharing metric to share with Angela next week (she's excited about the VA being a leader in the govt space) @Chocrates @jasonmacgowan @zkoppert,,,,
+Done 🥳,https://github.com/department-of-veterans-affairs/transition-to-GitHub/issues/919,MDU6SXNzdWU2NzM4NDc2MTk=,673,Meeting notes: VA Communities of Practice,,,,
+Done 🥳,https://github.com/department-of-veterans-affairs/transition-to-GitHub/issues/919,MDU6SXNzdWU2NDQyMDg2OTg=,528,Meeting notes: TRM Migration Initialization,,,,
+Done 🥳,https://github.com/department-of-veterans-affairs/transition-to-GitHub/issues/919,MDU6SXNzdWU2Nzc5NTA0MTY=,703,Provide evidence of deliveries in Roadmap,,true,Mjc,178

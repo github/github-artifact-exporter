@@ -54,6 +54,7 @@ export default class RepoReleases extends BaseCommand {
     let progress;
 
     // paginate through the GraphQL query until we get everything
+    debug("Pulling releases from API");
     do {
       results = await this.github.graphql(LIST_RELEASES_QUERY, {
         owner,
