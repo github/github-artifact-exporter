@@ -9,8 +9,7 @@ import {
   User,
   getIssuesWithComments,
   iterateObject,
-} from "@department-of-veterans-affairs/github-exporter-core";
-import * as VAAgent from "@department-of-veterans-affairs/agent";
+} from "@github/github-artifact-exporter-core";
 import { retry } from "@octokit/plugin-retry";
 import { Octokit } from "@octokit/rest";
 import {
@@ -54,9 +53,9 @@ function isWindows() {
 function setupLoggers(): winston.Logger {
   if (isPackaged()) {
     const prefix = buildPrefix();
-    let logPath = getFilePath("../../../github-exporter.log");
+    let logPath = getFilePath("../../../github-artifact-exporter.log");
     if (isWindows()) {
-      logPath = getFilePath("../github-exporter.log");
+      logPath = getFilePath("../github-artifact-exporter.log");
     }
 
     return winston.createLogger({
@@ -295,7 +294,6 @@ ipcMain.on("submit-export", async (event: any, form: any) => {
         baseUrl: form.baseUrl,
         request: {
           retries: 3,
-          agent: new VAAgent(),
         },
       });
 

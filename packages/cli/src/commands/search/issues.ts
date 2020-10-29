@@ -15,7 +15,7 @@ import {
   User,
   getIssuesWithComments,
   iterateObject,
-} from "@department-of-veterans-affairs/github-exporter-core";
+} from "@github/github-artifact-exporter-core";
 
 import dateformat = require("dateformat");
 

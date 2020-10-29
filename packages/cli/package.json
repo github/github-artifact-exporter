@@ -1,15 +1,14 @@
 {
-  "name": "@department-of-veterans-affairs/github-exporter-cli",
+  "name": "@github/github-artifact-exporter-cli",
   "description": "Exporter for GitHub",
   "version": "1.5.8",
   "author": "Jason Macgowan",
   "bin": {
     "exporter": "./bin/run"
   },
-  "bugs": "https://github.com/department-of-veterans-affairs/github-exporter/issues",
+  "bugs": "https://github.com/github/github-artifact-exporter/issues",
   "dependencies": {
-    "@department-of-veterans-affairs/agent": "1.0.0",
-    "@department-of-veterans-affairs/github-exporter-core": "^1.5.8",
+    "@github/github-artifact-exporter-core": "^1.5.8",
     "@oclif/command": "^1.6.1",
     "@oclif/config": "^1.15.1",
     "@oclif/plugin-help": "^3.1.0",
@@ -52,7 +51,7 @@
     "/npm-shrinkwrap.json",
     "/oclif.manifest.json"
   ],
-  "homepage": "https://github.com/department-of-veterans-affairs/github-exporter",
+  "homepage": "https://github.com/github/github-artifact-exporter",
   "keywords": [
     "oclif"
   ],
@@ -60,14 +59,14 @@
   "main": "lib/index.js",
   "oclif": {
     "commands": "./lib/commands",
-    "bin": "github-exporter",
+    "bin": "github-artifacts-exporter",
     "plugins": [
       "@oclif/plugin-help"
     ]
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/department-of-veterans-affairs/github-exporter.git",
+    "url": "git+https://github.com/github/github-artifact-exporter.git",
     "directory": "packages/cli"
   },
   "scripts": {

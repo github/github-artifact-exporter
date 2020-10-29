@@ -1,4 +1,3 @@
-import * as VAAgent from "@department-of-veterans-affairs/agent";
 import Command, { flags as flagTypes } from "@oclif/command";
 import { IConfig } from "@oclif/config";
 import { Octokit } from "@octokit/rest";
@@ -85,7 +84,6 @@ export default abstract class Base extends Command {
     this.github = new Octokit({
       baseUrl,
       auth: token,
-      request: { agent: new VAAgent() },
     });
   }
 }
