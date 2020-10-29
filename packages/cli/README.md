@@ -105,7 +105,7 @@ OPTIONS
   --token=token        (required) GitHub personal access token
 ```
 
-_See code: [src/commands/repo.ts](https://github.com/department-of-veterans-affairs/github-exporter/blob/v1.5.8/src/commands/repo.ts)_
+_See code: [src/commands/repo.ts](https://github.com/github/github-artifact-exporter/blob/main/packages/cli/src/commands/repo.ts)_
 
 ## `github-exporter repo:commits`
 
