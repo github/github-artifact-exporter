@@ -25,7 +25,7 @@ $ npm install -g @github/github-artifact-exporter
 $ github-exporter COMMAND
 running command...
 $ github-exporter (-v|--version|version)
-@department-of-veterans-affairs/github-exporter-cli/1.5.8 darwin-x64 node-v12.18.3
+@github/github-artifact-exporter/1.5.8 darwin-x64 node-v12.18.3
 $ github-exporter --help [COMMAND]
 USAGE
   $ github-exporter COMMAND
