@@ -56,7 +56,7 @@ github-exporter.exe repo:commits --owner department-of-veterans-affairs --repo c
 ### Exporting pull requests
 
 ```
-github-exporter.exe repo:pulls --owner department-of-veterans-affairs --repo caseflow --token $GITHUB_TOKEN --format CSV > pulls_export.csv
+github-exporter.exe repo:pulls --owner github --repo caseflow --token $GITHUB_TOKEN --format CSV > pulls_export.csv
 ```
 
 # Commands
