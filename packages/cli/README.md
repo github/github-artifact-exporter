@@ -38,7 +38,7 @@ USAGE
 ### Exporting issues
 
 ```
-github-exporter.exe search:issues --owner department-of-veterans-affairs --repo caseflow --token <github-token> --since 2020-06-01 --until 2020-06-08 --format CSV > issue_export.csv
+github-exporter.exe search:issues --owner github --repo caseflow --token <github-token> --since 2020-06-01 --until 2020-06-08 --format CSV > issue_export.csv
 ```
 
 ### Exporting closed issues with specific labels
