@@ -21,7 +21,7 @@ See the table below for examples of `owner` and `repo`
 
 <!-- usage -->
 ```sh-session
-$ npm install -g @department-of-veterans-affairs/github-exporter-cli
+$ npm install -g @github/github-artifact-exporter
 $ github-exporter COMMAND
 running command...
 $ github-exporter (-v|--version|version)
