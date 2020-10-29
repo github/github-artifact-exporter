@@ -44,7 +44,7 @@ github-exporter.exe search:issues --owner github --repo caseflow --token <github
 ### Exporting closed issues with specific labels
 
 ```
-github-exporter.exe search:issues --owner department-of-veterans-affairs --repo caseflow --token <github-token> --state closed --updatedSince 2020-06-01 --updatedUntil 2020-06-08 --labels "Type: Bug" --format CSV > issue_export.csv
+github-exporter.exe search:issues --owner github --repo caseflow --token <github-token> --state closed --updatedSince 2020-06-01 --updatedUntil 2020-06-08 --labels "Type: Bug" --format CSV > issue_export.csv
 ```
 
 ### Exporting commits
