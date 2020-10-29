@@ -39,4 +39,5 @@ lerna bootstrap
 We welcome you to contribute to this project! Check out [Open Issues](https://github.com/github/github-artifact-exporter/issues) and our [`CONTRIBUTING.md`](./CONTRIBUTING.md) to jump in.
 
 ## License
-[MIT](./LICENSE)
+[MIT](./LICENSE)  
+When using the GitHub logos, be sure to follow the [GitHub logo guidelines](https://github.com/logos).
