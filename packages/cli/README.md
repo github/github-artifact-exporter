@@ -126,7 +126,7 @@ OPTIONS
   --until=until        search commits created before yyyy-mm-dd
 ```
 
-_See code: [src/commands/repo/commits.ts](https://github.com/department-of-veterans-affairs/github-exporter/blob/v1.5.8/src/commands/repo/commits.ts)_
+_See code: [src/commands/repo/commits.ts](https://github.com/github/github-artifact-exporter/blob/main/packages/cli/src/commands/repo/commits.ts)_
 
 ## `github-exporter repo:milestones`
 
