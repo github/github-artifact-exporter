@@ -144,7 +144,7 @@ OPTIONS
   --token=token        (required) GitHub personal access token
 ```
 
-_See code: [src/commands/repo/milestones.ts](https://github.com/github/github-artifact-exporter/blob/v1.5.8/src/commands/repo/milestones.ts)_
+_See code: [src/commands/repo/milestones.ts](https://github.com/github/github-artifact-exporter/blob/main/packages/cli/src/commands/repo/milestones.ts)_
 
 ## `github-artifact-exporter repo:projects`
 
@@ -163,7 +163,7 @@ OPTIONS
   --token=token                  (required) GitHub personal access token
 ```
 
-_See code: [src/commands/repo/projects.ts](https://github.com/github/github-artifact-exporter/blob/v1.5.8/src/commands/repo/projects.ts)_
+_See code: [src/commands/repo/projects.ts](https://github.com/github/github-artifact-exporter/blob/main/packages/cli/src/commands/repo/projects.ts)_
 
 ## `github-artifact-exporter repo:pulls`
 
@@ -181,7 +181,7 @@ OPTIONS
   --token=token        (required) GitHub personal access token
 ```
 
-_See code: [src/commands/repo/pulls.ts](https://github.com/github/github-artifact-exporter/blob/v1.5.8/src/commands/repo/pulls.ts)_
+_See code: [src/commands/repo/pulls.ts](https://github.com/github/github-artifact-exporter/blob/main/packages/cli/src/commands/repo/pulls.ts)_
 
 ## `github-artifact-exporter repo:releases`
 
@@ -199,7 +199,7 @@ OPTIONS
   --token=token        (required) GitHub personal access token
 ```
 
-_See code: [src/commands/repo/releases.ts](https://github.com/github/github-artifact-exporter/blob/v1.5.8/src/commands/repo/releases.ts)_
+_See code: [src/commands/repo/releases.ts](https://github.com/github/github-artifact-exporter/blob/main/packages/cli/src/commands/repo/releases.ts)_
 
 ## `github-artifact-exporter search`
 
@@ -217,7 +217,7 @@ OPTIONS
   --token=token        (required) GitHub personal access token
 ```
 
-_See code: [src/commands/search.ts](https://github.com/github/github-artifact-exporter/blob/v1.5.8/src/commands/search.ts)_
+_See code: [src/commands/search.ts](https://github.com/github/github-artifact-exporter/blob/main/packages/cli/src/commands/search.ts)_
 
 ## `github-artifact-exporter search:issues`
 
@@ -244,5 +244,5 @@ OPTIONS
   --updatedUntil=updatedUntil  search issues updated before yyyy-mm-dd
 ```
 
-_See code: [src/commands/search/issues.ts](https://github.com/github/github-artifact-exporter/blob/v1.5.8/src/commands/search/issues.ts)_
+_See code: [src/commands/search/issues.ts](https://github.com/github/github-artifact-exporter/blob/main/packages/cli/src/commands/search/issues.ts)_
 <!-- commandsstop -->
