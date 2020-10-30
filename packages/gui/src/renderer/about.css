@@ -1,0 +1,11 @@
+img.center { 
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+footer {
+        position: absolute;
+        right: 0.5em;
+        bottom: 0.5em;
+}

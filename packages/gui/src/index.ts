@@ -8,52 +8,89 @@ import {
   getComments,
   User,
   getIssuesWithComments,
-} from "@github/github-exporter-core";
-import * as VAAgent from "@github/agent";
+  iterateObject,
+} from "@github/github-artifact-exporter-core";
 import { retry } from "@octokit/plugin-retry";
 import { Octokit } from "@octokit/rest";
-import { app, BrowserWindow, ipcMain, dialog, Menu } from "electron";
-import openAboutWindow from "about-window";
+import {
+  app,
+  BrowserWindow,
+  ipcMain,
+  dialog,
+  Menu,
+  app as appMain,
+  BrowserWindow as BrowserWindowMain,
+  remote,
+  shell,
+} from "electron";
+
+//import openAboutWindow from "about-window";
 import * as fs from "fs";
 import * as path from "path";
 import * as winston from "winston";
+import * as showdown from "showdown";
+import dateformat = require("dateformat");
 
 const MyOctokit = Octokit.plugin(retry);
 
-let prefix = "./";
-let indexPath = "./lib/renderer/index.html";
-let githubIcon = `${__dirname}/renderer/GitHub-Mark-120px-plus.png`;
-let logger: winston.Logger;
-const isPackaged =
-  app.getAppPath().includes(".app") || app.getAppPath().includes("app.asar");
-const isWindows =
-  app.getAppPath().includes("app.asar") && !app.getAppPath().includes(".app");
+const githubIcon = `${__dirname}/renderer/GitHub-Mark-120px-plus.png`;
+const logger = setupLoggers();
 
-if (isPackaged) {
+const indexPath = getFilePath("./lib/renderer/index.html");
+
+function isPackaged() {
+  return (
+    app.getAppPath().includes(".app") || app.getAppPath().includes("app.asar")
+  );
+}
+
+function isWindows() {
+  return (
+    app.getAppPath().includes("app.asar") && !app.getAppPath().includes(".app")
+  );
+}
+
+function setupLoggers(): winston.Logger {
+  if (isPackaged()) {
+    const prefix = buildPrefix();
+    let logPath = getFilePath("../../../github-artifact-exporter.log");
+    if (isWindows()) {
+      logPath = getFilePath("../github-artifact-exporter.log");
+    }
+
+    return winston.createLogger({
+      level: "info",
+      format: winston.format.json(),
+      defaultMeta: { service: "user-service" },
+      transports: [new winston.transports.File({ filename: logPath })],
+    });
+  } else {
+    return winston.createLogger({
+      level: "info",
+      format: winston.format.json(),
+      transports: [new winston.transports.Console()],
+    });
+  }
+}
+
+function buildPrefix() {
   const lastIndex = app.getAppPath().lastIndexOf("app.asar");
   const str = app.getAppPath().substring(0, lastIndex);
-  prefix = `${str}/`;
-  indexPath = `${prefix}lib/renderer/index.html`;
-  githubIcon = `${prefix}/lib/renderer/GitHub-Mark-120px-plus.png`;
-  let logPath = `${prefix}../../../github-exporter.log`;
-  if (isWindows) {
-    logPath = `${prefix}../github-exporter.log`;
+  return `${str}/`;
+}
+
+function getFilePath(relativePath: string) {
+  if (isPackaged()) {
+    const prefix = buildPrefix();
+    return `${prefix}${relativePath}`;
   }
-  logger = winston.createLogger({
-    level: "info",
-    format: winston.format.json(),
-    defaultMeta: { service: "user-service" },
-    transports: [new winston.transports.File({ filename: logPath })],
-  });
-} else {
-  logger = winston.createLogger({
-    level: "info",
-    format: winston.format.json(),
-    transports: [new winston.transports.Console()],
-  });
+
+  return relativePath;
 }
 
 const isMac = process.platform === "darwin";
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const template: any = [
   ...(isMac
     ? [
@@ -79,20 +116,7 @@ const template: any = [
       {
         label: "About",
         click() {
-          openAboutWindow({
-            // eslint-disable-next-line @typescript-eslint/camelcase
-            icon_path: githubIcon,
-            // eslint-disable-next-line @typescript-eslint/camelcase
-            bug_report_url: "https://github.com/github/github-exporter/issues",
-            // eslint-disable-next-line @typescript-eslint/camelcase
-            open_devtools: false,
-            // eslint-disable-next-line @typescript-eslint/camelcase
-            win_options: {
-              webPreferences: {
-                nodeIntegration: true,
-              },
-            },
-          });
+          openAboutWindow();
         },
       },
     ],
@@ -114,6 +138,104 @@ const template: any = [
     ],
   },
 ];
+
+function openWindow(options: any, htmlFile: string) {
+  let window: any = new BrowserWindow(options);
+
+  window.once("closed", () => {
+    window = null;
+  });
+
+  //window.webContents.openDevTools();
+  window.guiVersion = process.env.npm_package_version;
+  window.loadFile(htmlFile);
+
+  window.webContents.on("will-navigate", (e: any, url: any) => {
+    e.preventDefault();
+    shell.openExternal(url);
+  });
+  window.webContents.on("new-window", (e: any, url: any) => {
+    e.preventDefault();
+    shell.openExternal(url);
+  });
+
+  window.webContents.once("dom-ready", () => {
+    const winTitle = options.title;
+    const info: any = { winOptions: null };
+    info.winOptions = { title: winTitle };
+    info.openDevTools = options.open_devtools;
+    window.webContents.send("about-window:info", info);
+    if (info.openDevTools) {
+      if (process.versions.electron >= "1.4") {
+        window.webContents.openDevTools({ mode: "detach" });
+      } else {
+        window.webContents.openDevTools();
+      }
+    }
+  });
+
+  window.once("ready-to-show", () => {
+    window.show();
+  });
+
+  window.setMenu(null);
+
+  //info = injectInfoFromPackageJson(info);
+
+  return window;
+}
+
+function openAboutWindow() {
+  const indexHtml = getFilePath("./lib/renderer/about.html");
+  const options = Object.assign(
+    {
+      width: 400,
+      height: 400,
+      useContentSize: true,
+      titleBarStyle: "hidden-inset",
+      // eslint-disable-next-line @typescript-eslint/camelcase
+      open_devtools: false,
+      webPreferences: {
+        // For security reasons, nodeIntegration is no longer true by default when using Electron v5 or later
+        // nodeIntegration can be safely enabled as long as the window source is not remote
+        nodeIntegration: true,
+        // From Electron v10, this option is set to false by default
+        enableRemoteModule: true,
+      },
+    },
+    {}
+  );
+
+  openWindow(options, indexHtml);
+}
+
+// Convert license to html
+const license = fs.readFileSync(getFilePath("./lib/renderer/LICENSE"), "utf8");
+const converter = new showdown.Converter();
+const html = converter.makeHtml(license);
+const header = `
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=yes">
+      <title>Open Source License</title>
+      <link rel="stylesheet" href="./spectre.min.css" />
+      <link rel="stylesheet" href="./open-source.css" />
+    </head>
+    <body>
+    `;
+const footer = `
+  <!-- https://github.com/electron/electron/issues/2863 -->
+  <script>var exports = exports || {};</script>
+  <script src="./open-source.js"></script>
+
+  </body>
+  </html>`;
+fs.writeFileSync(
+  getFilePath("lib/renderer/license.html"),
+  header + html + footer
+);
 
 const menu = Menu.buildFromTemplate(template);
 Menu.setApplicationMenu(menu);
@@ -139,6 +261,7 @@ app.on("activate", () => {
   }
 });
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 ipcMain.on("submit-export", async (event: any, form: any) => {
   logger.info("Export Event Received");
   const file = await dialog.showSaveDialog({});
@@ -171,7 +294,6 @@ ipcMain.on("submit-export", async (event: any, form: any) => {
         baseUrl: form.baseUrl,
         request: {
           retries: 3,
-          agent: new VAAgent(),
         },
       });
 
@@ -239,6 +361,13 @@ ipcMain.on("submit-export", async (event: any, form: any) => {
           dot.move("comments.nodes", "comments", issue);
         }
 
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        iterateObject(issue, (obj: any, prop: any) => {
+          if (["createdAt", "updatedAt", "closedAt"].indexOf(prop) > -1) {
+            obj[prop] = dateformat(obj[prop], form.dateFormat);
+          }
+        });
+
         dot.del("id", issue);
         dot.move("assignees.nodes", "assignees", issue);
         dot.move("labels.nodes", "labels", issue);
@@ -256,8 +385,8 @@ ipcMain.on("submit-export", async (event: any, form: any) => {
         if (jira) {
           // Jira expects all comments to have a header of just "comment"
           // so we map commment0, comment1, comment2 etc to comment
-          mapHeaders = function (header: string) {
-            return header.replace(/comment[0-9]+/, "comment");
+          mapHeaders = function (subHeader: string) {
+            return subHeader.replace(/comment[0-9]+/, "comment");
           };
         }
 
@@ -276,4 +405,38 @@ ipcMain.on("submit-export", async (event: any, form: any) => {
       logger.error(error);
     }
   }
+});
+
+ipcMain.on("open-os", () => {
+  const info = {
+    openDevtools: false,
+    adjustWindowSize: false,
+    winOptions: {
+      title: "Open Source License",
+    },
+  };
+  const indexHtml = getFilePath("lib/renderer/license.html");
+
+  const options = Object.assign(
+    {
+      width: 600,
+      height: 600,
+      useContentSize: true,
+      titleBarStyle: "hidden-inset",
+      show: !info.adjustWindowSize,
+      title: info.winOptions.title,
+      // eslint-disable-next-line @typescript-eslint/camelcase
+      open_devtools: info.openDevtools,
+      webPreferences: {
+        // For security reasons, nodeIntegration is no longer true by default when using Electron v5 or later
+        // nodeIntegration can be safely enabled as long as the window source is not remote
+        nodeIntegration: true,
+        // From Electron v10, this option is set to false by default
+        enableRemoteModule: true,
+      },
+    },
+    info.winOptions || {}
+  );
+
+  const window = openWindow(options, indexHtml);
 });

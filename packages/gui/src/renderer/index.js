@@ -63,11 +63,13 @@ document.getElementById("exportform").addEventListener("submit", (evt) => {
       token: evt.target[1].value,
       search: evt.target[2].value,
       format: evt.target[3].value,
-      owner: evt.target[4].value,
-      search: evt.target[5].value,
-      baseUrl: evt.target[6].value,
-      repo: evt.target[7].value,
-      // export button is evt.target[8]
+      dateFormat: evt.target[4].value,
+      owner: evt.target[5].value,
+      search: evt.target[6].value,
+      baseUrl: evt.target[7].value,
+      repo: evt.target[8].value,
+      // export button is evt.target[9]
+      
     });
   } else {
     console.log("Invalid not submitting");

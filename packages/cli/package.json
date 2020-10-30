@@ -1,23 +1,24 @@
 {
-  "name": "@github/github-exporter-cli",
+  "name": "@github/github-artifact-exporter-cli",
   "description": "Exporter for GitHub",
   "version": "1.5.8",
   "author": "Jason Macgowan",
   "bin": {
     "exporter": "./bin/run"
   },
-  "bugs": "https://github.com/github/github-exporter/issues",
+  "bugs": "https://github.com/github/github-artifact-exporter/issues",
   "dependencies": {
-    "@github/agent": "1.0.0",
-    "@github/github-exporter-core": "^1.5.8",
+    "@github/github-artifact-exporter-core": "^1.5.8",
     "@oclif/command": "^1.6.1",
     "@oclif/config": "^1.15.1",
     "@oclif/plugin-help": "^3.1.0",
     "@octokit/rest": "^18.0.0",
+    "@types/dateformat": "^3.0.1",
     "@types/debug": "^4.1.5",
     "@types/dot-object": "^2.1.1",
     "@types/luxon": "^1.24.1",
     "@types/progress": "^2.0.3",
+    "dateformat": "^3.0.3",
     "debug": "^4.1.1",
     "dot-object": "^2.1.3",
     "jsonexport": "^3.0.1",
@@ -50,7 +51,7 @@
     "/npm-shrinkwrap.json",
     "/oclif.manifest.json"
   ],
-  "homepage": "https://github.com/github/github-exporter",
+  "homepage": "https://github.com/github/github-artifact-exporter",
   "keywords": [
     "oclif"
   ],
@@ -58,14 +59,14 @@
   "main": "lib/index.js",
   "oclif": {
     "commands": "./lib/commands",
-    "bin": "github-exporter",
+    "bin": "github-artifacts-exporter",
     "plugins": [
       "@oclif/plugin-help"
     ]
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/github/github-exporter.git",
+    "url": "git+https://github.com/github/github-artifact-exporter.git",
     "directory": "packages/cli"
   },
   "scripts": {

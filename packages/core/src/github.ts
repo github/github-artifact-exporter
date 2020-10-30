@@ -1,4 +1,5 @@
 export type Maybe<T> = T | null;
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export type Exact<T extends { [key: string]: any }> = { [K in keyof T]: T[K] };
 /** All built-in and custom scalars, mapped to their actual values */
 export type Scalars = {
@@ -8,22 +9,31 @@ export type Scalars = {
   Int: number;
   Float: number;
   /** An ISO-8601 encoded date string. */
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   Date: any;
   /** An ISO-8601 encoded UTC date string. */
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   DateTime: any;
   /** A Git object ID. */
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   GitObjectID: any;
   /** Git SSH string */
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   GitSSHRemote: any;
   /** An ISO-8601 encoded date string. Unlike the DateTime type, GitTimestamp is not converted in UTC. */
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   GitTimestamp: any;
   /** A string containing HTML code. */
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   HTML: any;
   /** An ISO-8601 encoded UTC date string with millisecond precison. */
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   PreciseDateTime: any;
   /** An RFC 3986, RFC 3987, and RFC 6570 (level 4) compliant URI string. */
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   URI: any;
   /** A valid x509 certificate string */
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   X509Certificate: any;
 };
 

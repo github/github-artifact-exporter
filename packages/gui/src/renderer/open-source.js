@@ -1,0 +1,1 @@
+const { ipcRenderer, shell, remote } = require("electron");

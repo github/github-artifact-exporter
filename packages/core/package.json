@@ -1,8 +1,8 @@
 {
-  "name": "@github/github-exporter-core",
+  "name": "@github/github-artifact-exporter-core",
   "version": "1.5.8",
   "description": "> TODO: description",
-  "author": "Jason Macgowan <1389531+jasonmacgowan@users.noreply.github.com>",
+  "author": "Jason Macgowan2 <1389531+jasonmacgowan@users.noreply.github.com>",
   "homepage": "",
   "license": "MIT",
   "main": "lib/core.js",
@@ -30,7 +30,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/github/github-exporter.git",
+    "url": "git+https://github.com/github/github-artifact-exporter.git",
     "directory": "packages/core"
   },
   "scripts": {
@@ -39,5 +39,8 @@
     "graphql:codegen": "graphql-codegen --config codegen.yml",
     "format": "prettier --write ."
   },
-  "gitHead": "bebf4402de364eb82675f1ea2bf90085804881ee"
+  "gitHead": "bebf4402de364eb82675f1ea2bf90085804881ee",
+  "pkg" : { 
+    "assets": [ "queries/**/*"]
+  }
 }

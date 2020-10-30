@@ -14,7 +14,10 @@ import {
   getComments,
   User,
   getIssuesWithComments,
-} from "@github/github-exporter-core";
+  iterateObject,
+} from "@github/github-artifact-exporter-core";
+
+import dateformat = require("dateformat");
 
 const debug = createDebugger("exporter:search:issues");
 
@@ -49,6 +52,11 @@ export default class SearchIssues extends SearchCommand {
     }),
     query: flagTypes.string({
       description: "Search query matching GitHub issue search syntax",
+    }),
+    dateFormat: flagTypes.string({
+      description:
+        "Date format to use when building issue list.  Examples: mm/dd/yyyy",
+      default: "isoDateTime",
     }),
   };
 
@@ -112,6 +120,7 @@ export default class SearchIssues extends SearchCommand {
       labels,
       jira,
       query,
+      dateFormat,
     } = flags;
     const searchTerms = ["is:issue"];
 
@@ -158,6 +167,7 @@ export default class SearchIssues extends SearchCommand {
 
     let issueProgress: ProgressBar;
 
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const progressCallback = (result: any) => {
       if (!issueProgress) {
         issueProgress = new ProgressBar(
@@ -170,8 +180,10 @@ export default class SearchIssues extends SearchCommand {
           }
         );
       }
-
-      issueProgress.tick(result.search.nodes?.length);
+      const resultLength = result.search.nodes?.length;
+      if (resultLength) {
+        issueProgress.tick(resultLength);
+      }
     };
 
     const issues = await getIssues(this.github, searchQuery, progressCallback);
@@ -196,6 +208,8 @@ export default class SearchIssues extends SearchCommand {
         total: remainingComments,
       }
     );
+
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const commentProgressCallback = (result: any) => {
       progress.tick(
         ((result.node as Issue).comments.nodes as IssueComment[]).length
@@ -219,6 +233,13 @@ export default class SearchIssues extends SearchCommand {
       } else {
         dot.move("comments.nodes", "comments", issue);
       }
+
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      iterateObject(issue, (obj: any, prop: any) => {
+        if (["createdAt", "updatedAt", "closedAt"].indexOf(prop) > -1) {
+          obj[prop] = dateformat(obj[prop], dateFormat);
+        }
+      });
 
       dot.del("id", issue);
       dot.move("assignees.nodes", "assignees", issue);
