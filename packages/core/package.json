@@ -40,7 +40,9 @@
     "format": "prettier --write ."
   },
   "gitHead": "bebf4402de364eb82675f1ea2bf90085804881ee",
-  "pkg" : { 
-    "assets": [ "queries/**/*"]
+  "pkg": {
+    "assets": [
+      "queries/**/*"
+    ]
   }
 }
