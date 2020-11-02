@@ -33,6 +33,9 @@ This is a [lerna](https://github.com/lerna/lerna) project. Clone the repository 
 lerna clean
 lerna link
 lerna bootstrap
+lerna run build
+# Optional, start the gui to ensure its working
+lerna run start
 ```
 
 ## Contributing
