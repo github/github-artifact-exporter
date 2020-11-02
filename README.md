@@ -27,13 +27,19 @@ Supported formats of the export file are
 
 ## Getting Started
 
-This is a [lerna](https://github.com/lerna/lerna) project. Clone the repository then set everything up with [`bootstrap`](https://github.com/lerna/lerna/tree/master/commands/bootstrap#readme).
+### Prerequisites
+1. This is a [lerna](https://github.com/lerna/lerna) project and will need the lerna CLI. 
+    - To install lerna globally run `npm install -g lerna`
+1. Generate and export a PAT so you can pull from GPR. The PAT will need read packages scope.
+    - `export NPM_TOKEN=<PAT>`
+
+### Building The Application
 
 ```
-lerna clean
+lerna clean -y
+lerna exec npm install
 lerna link
 lerna bootstrap
-lerna run build
 # Optional, start the gui to ensure its working
 lerna run start
 ```
