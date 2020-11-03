@@ -15,7 +15,7 @@ jobs:
       - name: Install lerna
         run: sudo npm install -g lerna
       - name: Publish Version
-        run: lerna publish $(echo $GITHUB_REF | cut -d'/' -f3) --force
+        run: lerna publish $(echo $GITHUB_REF | cut -d'/' -f3)
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
