@@ -32,6 +32,7 @@
     "@octokit/plugin-retry": "^3.0.3",
     "@octokit/rest": "^18.0.7",
     "@types/dateformat": "^3.0.1",
+    "@types/dot-object": "^2.1.2",
     "@types/showdown": "^1.9.3",
     "about-window": "^1.13.4",
     "dateformat": "^3.0.3",
