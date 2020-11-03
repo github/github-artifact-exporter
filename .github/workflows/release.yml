@@ -20,6 +20,8 @@ jobs:
         run: sudo npm install -g lerna
       - name: Install dependencies
         run: lerna exec npm install
+        env:
+          NPM_TOKEN: ${{ GITHUB_TOKEN }}
       - name: Test
         run: tree .git
       - name: reattach to Main
