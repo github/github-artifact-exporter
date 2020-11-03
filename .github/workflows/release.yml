@@ -13,7 +13,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
       - name: Install lerna
-        run: npm install -g lerna
+        run: sudo npm install -g lerna
       - name: Publish Version
         run: lerna publish $(echo $GITHUB_REF | cut -d'/' -f3) --force
       - name: Create Release
