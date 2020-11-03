@@ -18,6 +18,8 @@ jobs:
         run: sudo apt-get install -y tree
       - name: Install lerna
         run: sudo npm install -g lerna
+      - name: Install dependencies
+        run: lerna exec npm install
       - name: Test
         run: tree .git
       - name: reattach to Main
