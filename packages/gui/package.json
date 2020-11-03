@@ -21,7 +21,8 @@
     "prepack": "rimraf lib dist && tsc -b && copyfiles -Vu 1 src/renderer/**/* lib && copyfiles -Vu 2 ../../LICENSE lib/renderer/",
     "start": "npm run pkg:macos && electron .",
     "lint": "eslint . --ext .ts --config .eslintrc",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "build": "npm run prepack"
   },
   "bugs": {
     "url": "https://github.com/github/github-artifact-exporter/issues"
@@ -31,6 +32,7 @@
     "@octokit/plugin-retry": "^3.0.3",
     "@octokit/rest": "^18.0.7",
     "@types/dateformat": "^3.0.1",
+    "@types/dot-object": "^2.1.2",
     "@types/showdown": "^1.9.3",
     "about-window": "^1.13.4",
     "dateformat": "^3.0.3",
