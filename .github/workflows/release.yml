@@ -25,7 +25,10 @@ jobs:
       - name: Test
         run: tree .git
       - name: reattach to Main
-        run: git checkout main
+        run: |
+          git checkout main
+          git config --global user.email "va-delivery@github.com"
+          git config --global user.name "DevopsBot"
       - name: Publish Version
         run: |
           lerna version $(echo $GITHUB_REF | cut -d'/' -f3) --force-git-tag
