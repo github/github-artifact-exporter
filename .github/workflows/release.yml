@@ -12,10 +12,12 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
+      - name: Install tree
+        run: sudo apt-get install -y tree
       - name: Install lerna
         run: sudo npm install -g lerna
       - name: Test
-        run: echo ${{ github.head_ref }}
+        run: tree .git
       - name: reattach to Main
         run: git checkout refs/heads/main
       - name: Publish Version
