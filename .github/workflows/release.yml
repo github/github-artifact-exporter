@@ -21,7 +21,7 @@ jobs:
       - name: Install dependencies
         run: lerna exec npm install
         env:
-          NPM_TOKEN: ${{ GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Test
         run: tree .git
       - name: reattach to Main
