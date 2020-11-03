@@ -16,12 +16,8 @@ jobs:
         run: sudo npm install -g lerna
       - name: Test
         run: echo ${{ github.head_ref }}
-      - name: reattach HEAD to Head Ref
-        run: git checkout "$(echo ${{ github.head_ref }} | sed -E 's|refs/[a-zA-Z]+/||')"
-        if: github.head_ref != ''
-      - name: reattach HEAD to Ref
-        run: git checkout "$(echo ${{ github.ref }} | sed -E 's|refs/[a-zA-Z]+/||')"
-        if: github.head_ref == ''
+      - name: reattach to Main
+        run: git checkout refs/heads/main
       - name: Publish Version
         run: lerna publish $(echo $GITHUB_REF | cut -d'/' -f3)
       - name: Create Release
