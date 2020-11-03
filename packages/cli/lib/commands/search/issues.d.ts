@@ -1,6 +1,6 @@
 import { flags as flagTypes } from "@oclif/command";
 import SearchCommand from "../search";
-import { Issue } from "@department-of-veterans-affairs/github-exporter-core";
+import { Issue } from "@github/github-artifact-exporter-core";
 export default class SearchIssues extends SearchCommand {
     static description: string;
     static flags: {
