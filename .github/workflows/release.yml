@@ -12,7 +12,8 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-        branch: main
+        with:
+          ref: main
       - name: Install tree
         run: sudo apt-get install -y tree
       - name: Install lerna
