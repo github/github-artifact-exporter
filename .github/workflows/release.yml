@@ -31,7 +31,7 @@ jobs:
           git config --global user.name "DevopsBot"
       - name: Publish Version
         run: |
-          lerna version $(echo $GITHUB_REF | cut -d'/' -f3) --force-git-tag
+          lerna version $(echo $GITHUB_REF | cut -d'/' -f3) --force-git-tag --force-publish --yes
           lerna publish $(echo $GITHUB_REF | cut -d'/' -f3) --yes --force-publish
       - name: Create Release
         id: create_release
