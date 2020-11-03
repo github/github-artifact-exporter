@@ -1,14 +1,14 @@
 {
   "name": "@github/github-artifact-exporter-cli",
   "description": "Exporter for GitHub",
-  "version": "1.5.8",
+  "version": "1.8.4",
   "author": "Jason Macgowan",
   "bin": {
     "exporter": "./bin/run"
   },
   "bugs": "https://github.com/github/github-artifact-exporter/issues",
   "dependencies": {
-    "@github/github-artifact-exporter-core": "^1.5.8",
+    "@github/github-artifact-exporter-core": "^1.8.4",
     "@oclif/command": "^1.8.0",
     "@oclif/config": "^1.17.0",
     "@oclif/plugin-help": "^3.2.0",

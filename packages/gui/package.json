@@ -1,6 +1,6 @@
 {
   "name": "@github/github-artifact-exporter-gui",
-  "version": "1.5.8",
+  "version": "1.8.4",
   "description": "> TODO: description",
   "author": "Chris McIntosh <chocrates@github.com>",
   "homepage": "https://github.com/github/github-artifact-exporter#readme",
@@ -28,7 +28,7 @@
     "url": "https://github.com/github/github-artifact-exporter/issues"
   },
   "dependencies": {
-    "@github/github-artifact-exporter-core": "^1.5.8",
+    "@github/github-artifact-exporter-core": "^1.8.4",
     "@octokit/plugin-retry": "^3.0.3",
     "@octokit/rest": "^18.0.7",
     "@types/dateformat": "^3.0.1",
