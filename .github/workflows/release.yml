@@ -21,7 +21,7 @@ jobs:
       - name: Test
         run: tree .git
       - name: reattach to Main
-        run: git checkout refs/heads/main
+        run: git checkout main
       - name: Publish Version
         run: lerna publish $(echo $GITHUB_REF | cut -d'/' -f3)
       - name: Create Release
