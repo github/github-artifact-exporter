@@ -23,7 +23,9 @@ jobs:
       - name: reattach to Main
         run: git checkout main
       - name: Publish Version
-        run: lerna publish $(echo $GITHUB_REF | cut -d'/' -f3)
+        run: |
+          lerna version $(echo $GITHUB_REF | cut -d'/' -f3) --force-git-tag
+          lerna publish $(echo $GITHUB_REF | cut -d'/' -f3)
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
