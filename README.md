@@ -1,5 +1,5 @@
 # GitHub Exporter
-_Currently in used in production_
+_Currently used in production_
 
 The GitHub Exporter is written in Typescript and provides a set of packages to make exporting artifacts from GitHub easier useful for those migrating information out of github.com
 
