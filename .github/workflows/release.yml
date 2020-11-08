@@ -1,38 +1,17 @@
 name: Create release
-
 on:
   push:
-    tags:
-      - "v*"
+    branches:
+      - master
 
 jobs:
   build:
     name: Create Release
     runs-on: ubuntu-latest
+    if: "contains(github.event.head_commit.message, 'chore(release): lerna publish')"
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-        with:
-          ref: main
-      - name: Install tree
-        run: sudo apt-get install -y tree
-      - name: Install lerna
-        run: sudo npm install -g lerna
-      - name: Install dependencies
-        run: lerna exec npm install
-        env:
-          NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: Test
-        run: tree .git
-      - name: reattach to Main
-        run: |
-          git checkout main
-          git config --global user.email "va-delivery@github.com"
-          git config --global user.name "DevopsBot"
-      - name: Publish Version
-        run: |
-          lerna version $(echo $GITHUB_REF | cut -d'/' -f3) --force-git-tag --force-publish --yes
-          lerna publish $(echo $GITHUB_REF | cut -d'/' -f3) --yes --force-publish
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
