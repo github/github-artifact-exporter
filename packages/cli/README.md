@@ -246,3 +246,4 @@ OPTIONS
 
 _See code: [src/commands/search/issues.ts](https://github.com/github/github-artifact-exporter/blob/v1.8.4/src/commands/search/issues.ts)_
 <!-- commandsstop -->
+
