@@ -1,7 +1,8 @@
 {
   "command": {
     "publish": {
-      "message": "chore(release): npm publish %s",
+      "conventionalCommits": true,
+      "message": "chore(release): lerna publish %s",
       "registry": "https://npm.pkg.github.com"
     }
   },
