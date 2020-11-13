@@ -1,0 +1,68 @@
+{
+  "name": "@github/github-artifact-exporter-gui",
+  "version": "2.0.0",
+  "description": "> TODO: description",
+  "author": "Chris McIntosh <chocrates@github.com>",
+  "homepage": "https://github.com/github/github-artifact-exporter#readme",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/github/github-artifact-exporter.git",
+    "directory": "packages/gui"
+  },
+  "scripts": {
+    "pkg:linux": "echo \"Error: run tests from root\" && exit 1",
+    "pkg:macos": "npm run prepack && electron-builder --dir",
+    "pkg:windows": "npm run prepack && electron-builder -w",
+    "prepack": "rimraf lib dist && tsc -b && copyfiles -Vu 1 src/renderer/**/* lib && copyfiles -Vu 2 ../../LICENSE lib/renderer/",
+    "start": "npm run pkg:macos && electron .",
+    "lint": "eslint . --ext .ts --config .eslintrc",
+    "format": "prettier --write .",
+    "build": "npm run prepack"
+  },
+  "bugs": {
+    "url": "https://github.com/github/github-artifact-exporter/issues"
+  },
+  "dependencies": {
+    "@github/github-artifact-exporter-core": "^2.0.0",
+    "@octokit/plugin-retry": "^3.0.3",
+    "@octokit/rest": "^18.0.7",
+    "@types/dateformat": "^3.0.1",
+    "@types/dot-object": "^2.1.2",
+    "@types/showdown": "^1.9.3",
+    "about-window": "^1.13.4",
+    "dateformat": "^3.0.3",
+    "dot-object": "^2.1.4",
+    "jsonexport": "^3.0.1",
+    "rimraf": "^3.0.2",
+    "showdown": "^1.9.1",
+    "tslib": "^2.0.3",
+    "typescript": "^3.9.7",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "copyfiles": "^2.4.0",
+    "electron": "^9.3.3",
+    "electron-builder": "^22.9.1"
+  },
+  "build": {
+    "appId": "github-artifact-exporter",
+    "productName": "github-artifact-exporter",
+    "files": [
+      "lib/**/*",
+      "package.json"
+    ],
+    "extraResources": [
+      "lib/renderer/**/*",
+      "ca/**/*"
+    ],
+    "directories": {
+      "output": "dist"
+    }
+  },
+  "gitHead": "bebf4402de364eb82675f1ea2bf90085804881ee"
+}

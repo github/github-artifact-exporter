@@ -1,0 +1,91 @@
+{
+  "name": "@github/github-artifact-exporter-cli",
+  "description": "Exporter for GitHub",
+  "version": "2.0.0",
+  "author": "Jason Macgowan",
+  "bin": {
+    "exporter": "./bin/run"
+  },
+  "bugs": "https://github.com/github/github-artifact-exporter/issues",
+  "dependencies": {
+    "@github/github-artifact-exporter-core": "^2.0.0",
+    "@oclif/command": "^1.8.0",
+    "@oclif/config": "^1.17.0",
+    "@oclif/plugin-help": "^3.2.0",
+    "@octokit/rest": "^18.0.7",
+    "@types/dateformat": "^3.0.1",
+    "@types/debug": "^4.1.5",
+    "@types/dot-object": "^2.1.2",
+    "@types/luxon": "^1.25.0",
+    "@types/progress": "^2.0.3",
+    "dateformat": "^3.0.3",
+    "debug": "^4.2.0",
+    "dot-object": "^2.1.4",
+    "jsonexport": "^3.0.1",
+    "luxon": "^1.25.0",
+    "progress": "^2.0.3",
+    "tslib": "^1.14.1"
+  },
+  "devDependencies": {
+    "@oclif/dev-cli": "^1.22.2",
+    "@oclif/test": "^1.2.7",
+    "@types/chai": "^4.2.14",
+    "@types/mocha": "^5.2.7",
+    "@types/node": "^10.17.44",
+    "chai": "^4.2.0",
+    "globby": "^10.0.2",
+    "mocha": "^5.2.0",
+    "nock": "^12.0.3",
+    "nyc": "^14.1.1",
+    "pkg": "^4.4.9",
+    "rimraf": "^3.0.2",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.7"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "/bin",
+    "/lib",
+    "/npm-shrinkwrap.json",
+    "/oclif.manifest.json"
+  ],
+  "homepage": "https://github.com/github/github-artifact-exporter",
+  "keywords": [
+    "oclif"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "oclif": {
+    "commands": "./lib/commands",
+    "bin": "github-artifacts-exporter",
+    "plugins": [
+      "@oclif/plugin-help"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/github/github-artifact-exporter.git",
+    "directory": "packages/cli"
+  },
+  "scripts": {
+    "pkg:linux": "npm run prepack && pkg package.json --target node12-linux-x64 --out-path ./dist && npm run postpack",
+    "pkg:macos": "npm run prepack && pkg package.json --target node12-macos-x64 --out-path ./dist && npm run postpack",
+    "pkg:windows": "npm run prepack && pkg package.json --target node12-win-x64 --out-path ./dist && npm run postpack",
+    "postpack": "rm -f oclif.manifest.json",
+    "prepack": "rimraf lib && tsc -b && oclif-dev manifest && oclif-dev readme",
+    "test": "nyc --extension .ts mocha --forbid-only \"test/**/*.test.ts\"",
+    "version": "oclif-dev readme && git add README.md",
+    "build": "npm run prepack"
+  },
+  "types": "lib/index.d.ts",
+  "pkg": {
+    "scripts": "./lib/**/*.js",
+    "assets": [
+      "ca/*.pem",
+      "package.json"
+    ]
+  },
+  "gitHead": "bebf4402de364eb82675f1ea2bf90085804881ee"
+}

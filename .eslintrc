@@ -1,0 +1,14 @@
+{
+  "env": {
+    "node": true
+  },
+  "extends": [
+    "plugin:github/recommended",
+    "plugin:github/typescript",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": ["html"],
+  "rules": {
+    "import/no-namespace": "off"
+  }
+}

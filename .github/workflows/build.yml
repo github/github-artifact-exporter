@@ -1,0 +1,40 @@
+name: Build and upload release assets
+
+on:
+  release:
+    types:
+      - created
+
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  NPM_TOKEN: ${{ secrets.GPR_READ_PACKAGE }}
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+      - run: npm ci
+      - run: npm run bootstrap
+      - name: Build executables
+        run: npx lerna run pkg:windows
+      - name: Zip up GUI
+        run: |
+          cd packages/gui/dist/win-unpacked
+          7z a github-exporter.zip .
+      - name: Upload GitHub Exporter GUI
+        uses: actions/upload-release-asset@v1
+        with:
+          upload_url: ${{ github.event.release.upload_url }}
+          asset_path: ./packages/gui/dist/win-unpacked/github-exporter.zip
+          asset_name: github-exporter.zip
+          asset_content_type: application/zip
+      - name: Upload GitHub Exporter CLI
+        uses: actions/upload-release-asset@v1
+        with:
+          upload_url: ${{ github.event.release.upload_url }}
+          asset_path: ./packages/cli/dist/github-exporter-cli.exe
+          asset_name: github-exporter.exe
+          asset_content_type: application/vnd.microsoft.portable-executable
