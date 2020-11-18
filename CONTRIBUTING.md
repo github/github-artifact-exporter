@@ -32,13 +32,9 @@ Here are a few things you can do that will increase the likelihood of your pull 
 - Release are to follow [semantic versioning](https://semver.org/)
 - Releases are to utilize the [Release](https://github.com/github/github-artifact-exporter/releases) feature of GitHub
 
-1. Create a branch from the master branch `git checkout master; git checkout -b release-x.x`
-1. Run locally `lerna version`
-1. Select the correct next version _ie. v2.0.1_
-1. Commit changed files with the exact commit message `chore(release): lerna publish`
-1. Push these changes `git push`
-1. Open a pull request, get approval, and merge
-1. Once these changes are merged into `master` branch, automation will [create a release](https://github.com/github/github-artifact-exporter/blob/main/.github/workflows/release.yml), [build the artifacts, and upload them to the release](https://github.com/github/github-artifact-exporter/blob/main/.github/workflows/build.yml)
+1. Clone locally
+1. Run locally `lerna publish`
+1. Automation will [create a release](https://github.com/github/github-artifact-exporter/blob/main/.github/workflows/release.yml), [build the artifacts, and upload them to the release](https://github.com/github/github-artifact-exporter/blob/main/.github/workflows/build.yml)
 
 ## Resources
 
