@@ -1,4 +1,4 @@
-## Contributing
+# Contributing
 
 [fork]: https://github.com/github/github-artifact-exporter/fork
 [pr]: https://github.com/github/github-artifact-exporter/compare
