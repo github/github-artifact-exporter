@@ -32,7 +32,7 @@ Here are a few things you can do that will increase the likelihood of your pull 
 - Release are to follow [semantic versioning](https://semver.org/)
 - Releases are to utilize the [Release](https://github.com/github/github-artifact-exporter/releases) feature of GitHub
 
-1. Clone locally
+1. Clone locally and ensure that you are on the `main` branch
 1. Run locally `lerna publish`
 1. Automation will [create a release](https://github.com/github/github-artifact-exporter/blob/main/.github/workflows/release.yml), [build the artifacts, and upload them to the release](https://github.com/github/github-artifact-exporter/blob/main/.github/workflows/build.yml)
 
