@@ -31,7 +31,7 @@ Supported formats of the export file are
 ## Getting Started
 
 ### Prerequisites
-1. This is a [lerna](https://github.com/lerna/lerna) project and will need the lerna CLI. 
+1. This is a [lerna](https://github.com/lerna/lerna) project and will need the lerna CLI.
     - To install lerna globally run `npm install -g lerna`
 1. Generate and export a PAT so you can pull from GPR. The PAT will need read packages scope.
     - `export NPM_TOKEN=<PAT>`
