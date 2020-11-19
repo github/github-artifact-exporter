@@ -2,6 +2,8 @@
 ![Node.js CI](https://github.com/github/github-artifact-exporter/workflows/Node.js%20CI/badge.svg) ![Create release](https://github.com/github/github-artifact-exporter/workflows/Create%20release/badge.svg) ![Build and upload release assets](https://github.com/github/github-artifact-exporter/workflows/Build%20and%20upload%20release%20assets/badge.svg)  
 _Currently used in production_
 
+![Screenshot of the User interface](imgs/screenshot.png)
+
 The GitHub Exporter is written in Typescript and provides a set of packages to make exporting artifacts from GitHub easier useful for those migrating information out of github.com
 
 Supported artifacts that you can export are
@@ -29,14 +31,14 @@ Supported formats of the export file are
 ## Getting Started
 
 ### Prerequisites
-1. This is a [lerna](https://github.com/lerna/lerna) project and will need the lerna CLI. 
+1. This is a [lerna](https://github.com/lerna/lerna) project and will need the lerna CLI.
     - To install lerna globally run `npm install -g lerna`
 1. Generate and export a PAT so you can pull from GPR. The PAT will need read packages scope.
     - `export NPM_TOKEN=<PAT>`
 
 ### Building The Application
 
-```
+```bash
 lerna clean -y
 lerna exec npm install
 lerna link
