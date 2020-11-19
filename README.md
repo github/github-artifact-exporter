@@ -38,7 +38,7 @@ Supported formats of the export file are
 
 ### Building The Application
 
-```
+```bash
 lerna clean -y
 lerna exec npm install
 lerna link
