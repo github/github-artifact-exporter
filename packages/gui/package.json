@@ -29,25 +29,25 @@
   },
   "dependencies": {
     "@github/github-artifact-exporter-core": "^2.0.1",
-    "@octokit/plugin-retry": "^3.0.3",
-    "@octokit/rest": "^18.0.7",
+    "@octokit/plugin-retry": "^3.0.7",
+    "@octokit/rest": "^18.5.3",
     "@types/dateformat": "^3.0.1",
     "@types/dot-object": "^2.1.2",
     "@types/showdown": "^1.9.3",
-    "about-window": "^1.13.4",
-    "dateformat": "^3.0.3",
+    "about-window": "^1.14.0",
+    "dateformat": "^4.5.1",
     "dot-object": "^2.1.4",
-    "jsonexport": "^3.0.1",
+    "jsonexport": "^3.2.0",
     "rimraf": "^3.0.2",
     "showdown": "^1.9.1",
-    "tslib": "^2.0.3",
-    "typescript": "^3.9.7",
+    "tslib": "^2.2.0",
+    "typescript": "^4.2.4",
     "winston": "^3.3.3"
   },
   "devDependencies": {
-    "copyfiles": "^2.4.0",
-    "electron": "^9.3.3",
-    "electron-builder": "^22.9.1"
+    "copyfiles": "^2.4.1",
+    "electron": "^12.0.8",
+    "electron-builder": "^22.10.5"
   },
   "build": {
     "appId": "github-artifact-exporter",
