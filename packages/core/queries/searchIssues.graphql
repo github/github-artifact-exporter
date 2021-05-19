@@ -39,6 +39,7 @@ query searchIssues(
         }
         state
         title
+        body
         updatedAt
         milestone {
           title
