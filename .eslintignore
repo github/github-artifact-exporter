@@ -1,6 +1,7 @@
 **/dist/
 **/lib/
 **/node_modules/
-packages/gui/layout/
+**/*.d.ts
 packages/core/graphql.schema.json
-packages/core/github.d.ts
+packages/core/src/github.ts
+packages/gui/layout/

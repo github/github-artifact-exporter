@@ -1,5 +1,3 @@
-/* globals __dirname */
-
 import * as fs from "fs";
 import * as path from "path";
 import { Issue, IssueComment } from "./github";

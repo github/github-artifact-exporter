@@ -1,5 +1,3 @@
-/* globals process */
-
 import { flags as flagTypes } from "@oclif/command";
 import createDebugger from "debug";
 import * as dot from "dot-object";

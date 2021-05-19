@@ -12,17 +12,7 @@ import {
 } from "@github/github-artifact-exporter-core";
 import { retry } from "@octokit/plugin-retry";
 import { Octokit } from "@octokit/rest";
-import {
-  app,
-  BrowserWindow,
-  ipcMain,
-  dialog,
-  Menu,
-  app as appMain,
-  BrowserWindow as BrowserWindowMain,
-  remote,
-  shell,
-} from "electron";
+import { app, BrowserWindow, ipcMain, dialog, Menu, shell } from "electron";
 
 //import openAboutWindow from "about-window";
 import * as fs from "fs";
@@ -33,7 +23,6 @@ import dateformat = require("dateformat");
 
 const MyOctokit = Octokit.plugin(retry);
 
-const githubIcon = `${__dirname}/renderer/GitHub-Mark-120px-plus.png`;
 const logger = setupLoggers();
 
 const indexPath = getFilePath("./lib/renderer/index.html");
@@ -52,7 +41,6 @@ function isWindows() {
 
 function setupLoggers(): winston.Logger {
   if (isPackaged()) {
-    const prefix = buildPrefix();
     let logPath = getFilePath("../../../github-artifact-exporter.log");
     if (isWindows()) {
       logPath = getFilePath("../github-artifact-exporter.log");
@@ -438,5 +426,5 @@ ipcMain.on("open-os", () => {
     info.winOptions || {}
   );
 
-  const window = openWindow(options, indexHtml);
+  openWindow(options, indexHtml);
 });

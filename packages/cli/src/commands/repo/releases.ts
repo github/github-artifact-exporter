@@ -1,5 +1,3 @@
-/* globals process */
-
 import createDebugger from "debug";
 import * as ProgressBar from "progress";
 import * as jsonexport from "jsonexport";
