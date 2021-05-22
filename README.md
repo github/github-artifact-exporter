@@ -9,9 +9,10 @@ Supported artifacts that you can export are
 - Issues (including filtered sub sets)
 
 Supported formats of the export file are
-- CSV
-- JIRA formatted CSV
+- JSON Lines
 - JSON
+- CSV
+- JIRA-formatted CSV
 
 ## Packages
 

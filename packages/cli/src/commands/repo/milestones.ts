@@ -84,10 +84,12 @@ export default class RepoMilestones extends BaseCommand {
       milestones.push(...results.repository.milestones.nodes);
     } while (results.repository.milestones.pageInfo.hasNextPage);
 
-    if (format === "JSON") {
+    if (format === "JSONL") {
       for (const release of milestones) {
         process.stdout.write(`${JSON.stringify(release)}\n`);
       }
+    } else if (format === "JSON") {
+      process.stdout.write(JSON.stringify(milestones));
     } else if (format === "CSV") {
       const csv = await jsonexport(milestones, { fillGaps: true });
       process.stdout.write(csv);

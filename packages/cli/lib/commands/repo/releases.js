@@ -65,10 +65,13 @@ class RepoReleases extends base_1.default {
             progress.tick(results.repository.releases.nodes.length);
             releases.push(...results.repository.releases.nodes);
         } while (results.repository.releases.pageInfo.hasNextPage);
-        if (format === "JSON") {
+        if (format === "JSONL") {
             for (const release of releases) {
                 process.stdout.write(`${JSON.stringify(release)}\n`);
             }
+        }
+        else if (format === "JSON") {
+            process.stdout.write(JSON.stringify(releases));
         }
         else if (format === "CSV") {
             const csv = await jsonexport(releases, { fillGaps: true });

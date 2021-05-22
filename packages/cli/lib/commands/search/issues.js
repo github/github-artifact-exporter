@@ -60,8 +60,8 @@ class SearchIssues extends search_1.default {
         const { flags } = this.parse(SearchIssues);
         const { owner, repo, since, until, format, updatedSince, updatedUntil, state, labels, jira, query, dateFormat, } = flags;
         const searchTerms = ["is:issue"];
-        if (jira && format === "JSON") {
-            this.error("--jira is not compatible with --format=JSON. Try adding --format=CSV.");
+        if (jira && format !== "CSV") {
+            this.error("--jira is only compatible with --format=CSV.");
         }
         if (repo && owner) {
             searchTerms.push(`repo:${owner}/${repo}`);
@@ -156,10 +156,13 @@ class SearchIssues extends search_1.default {
             // @ts-ignore
             issue.labels = issue.labels.map(({ name }) => name).join(", ");
         }
-        if (format === "JSON") {
+        if (format === "JSONL") {
             for (const issue of issues) {
                 process.stdout.write(`${JSON.stringify(issue)}\n`);
             }
+        }
+        else if (format === "JSON") {
+            process.stdout.write(JSON.stringify(issues));
         }
         else if (format === "CSV") {
             let mapHeaders = null;

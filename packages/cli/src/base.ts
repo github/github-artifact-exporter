@@ -33,8 +33,8 @@ export default abstract class Base extends Command {
     }),
 
     format: flagTypes.enum({
-      options: ["JSON", "CSV"],
-      default: "JSON",
+      options: ["JSONL", "JSON", "CSV"],
+      default: "JSONL",
       description: "export format",
     }),
   };

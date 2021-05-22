@@ -90,10 +90,13 @@ class RepoCommits extends base_1.default {
             }
             commits.push(...results.repository.ref.target.history.nodes);
         } while (results.repository.ref.target.history.pageInfo.hasNextPage);
-        if (format === "JSON") {
+        if (format === "JSONL") {
             for (const release of commits) {
                 process.stdout.write(`${JSON.stringify(release)}\n`);
             }
+        }
+        else if (format === "JSON") {
+            process.stdout.write(JSON.stringify(commits));
         }
         else if (format === "CSV") {
             const csv = await jsonexport(commits, { fillGaps: true });

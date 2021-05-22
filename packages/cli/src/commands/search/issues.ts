@@ -124,10 +124,8 @@ export default class SearchIssues extends SearchCommand {
     } = flags;
     const searchTerms = ["is:issue"];
 
-    if (jira && format === "JSON") {
-      this.error(
-        "--jira is not compatible with --format=JSON. Try adding --format=CSV."
-      );
+    if (jira && format !== "CSV") {
+      this.error("--jira is only compatible with --format=CSV.");
     }
 
     if (repo && owner) {
@@ -250,10 +248,12 @@ export default class SearchIssues extends SearchCommand {
       issue.labels = issue.labels.map(({ name }) => name).join(", ");
     }
 
-    if (format === "JSON") {
+    if (format === "JSONL") {
       for (const issue of issues) {
         process.stdout.write(`${JSON.stringify(issue)}\n`);
       }
+    } else if (format === "JSON") {
+      process.stdout.write(JSON.stringify(issues));
     } else if (format === "CSV") {
       let mapHeaders: Function | null = null;
 

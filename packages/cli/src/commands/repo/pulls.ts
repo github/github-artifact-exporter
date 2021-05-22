@@ -223,10 +223,12 @@ export default class RepoPulls extends BaseCommand {
       pull.labels = pull.labels.map(({ name }) => name).join(", ");
     }
 
-    if (format === "JSON") {
+    if (format === "JSONL") {
       for (const pull of pulls) {
         process.stdout.write(`${JSON.stringify(pull)}\n`);
       }
+    } else if (format === "JSON") {
+      process.stdout.write(JSON.stringify(pulls));
     } else if (format === "CSV") {
       const csv = await jsonexport(pulls, { fillGaps: true });
       process.stdout.write(csv);
