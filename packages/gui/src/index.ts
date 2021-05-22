@@ -23,6 +23,7 @@ import {
   remote,
   shell,
 } from "electron";
+import * as ESAPI from "node-esapi";
 
 //import openAboutWindow from "about-window";
 import * as fs from "fs";
@@ -31,6 +32,7 @@ import * as winston from "winston";
 import * as showdown from "showdown";
 import dateformat = require("dateformat");
 
+const encoder = ESAPI.encoder();
 const MyOctokit = Octokit.plugin(retry);
 
 const githubIcon = `${__dirname}/renderer/GitHub-Mark-120px-plus.png`;
@@ -316,7 +318,7 @@ ipcMain.on("submit-export", async (event: any, form: any) => {
         mainWindow.webContents.send("export-loading-stop");
         mainWindow.webContents.send(
           "export-error",
-          `Error when searching issues: ${error}`
+          `Error when searching issues: ${encoder.encodeForHTML(error)}`
         );
         logger.error(error);
         return;
@@ -401,7 +403,10 @@ ipcMain.on("submit-export", async (event: any, form: any) => {
       );
     } catch (error) {
       mainWindow.webContents.send("export-loading-stop");
-      mainWindow.webContents.send("export-failure", `Export failure: ${error}`);
+      mainWindow.webContents.send(
+        "export-failure",
+        `Export failure: ${encoder.encodeForHTML(error)}`
+      );
       logger.error(error);
     }
   }
