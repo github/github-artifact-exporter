@@ -399,9 +399,7 @@ ipcMain.on("submit-export", async (event: any, form: any) => {
       mainWindow.webContents.send("export-loading-stop");
       mainWindow.webContents.send(
         "export-success",
-        `Export complete.  Results written to ${encoder.encodeForHTML(
-          file.filePath
-        )}`
+        `Export complete.  Results written to ${file.filePath}`
       );
     } catch (error) {
       mainWindow.webContents.send("export-loading-stop");
