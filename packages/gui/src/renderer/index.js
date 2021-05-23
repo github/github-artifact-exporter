@@ -21,7 +21,7 @@ const footer_message = (success, message) => {
   } else {
     classList.add("text-error");
   }
-  el.innerHTML = message;
+  el.innerText = message;
 };
 
 const clear_footer_message = () => {
