@@ -98,11 +98,11 @@ USAGE
   $ github-artifacts-exporter repo
 
 OPTIONS
-  --baseUrl=baseUrl    [default: https://api.github.com] GitHub base url
-  --format=(JSON|CSV)  [default: JSON] export format
-  --owner=owner        GitHub repository owner
-  --repo=repo          GitHub repository name
-  --token=token        (required) GitHub personal access token
+  --baseUrl=baseUrl          [default: https://api.github.com] GitHub base url
+  --format=(JSONL|JSON|CSV)  [default: JSONL] export format
+  --owner=owner              GitHub repository owner
+  --repo=repo                GitHub repository name
+  --token=token              (required) GitHub personal access token
 ```
 
 _See code: [src/commands/repo.ts](https://github.com/github/github-artifact-exporter/blob/v2.0.1/packages/cli/src/commands/repo.ts)_
@@ -116,14 +116,14 @@ USAGE
   $ github-artifacts-exporter repo:commits
 
 OPTIONS
-  --baseUrl=baseUrl    [default: https://api.github.com] GitHub base url
-  --branch=branch      [default: master] git branch to export commits for
-  --format=(JSON|CSV)  [default: JSON] export format
-  --owner=owner        GitHub repository owner
-  --repo=repo          GitHub repository name
-  --since=since        search commits created after yyyy-mm-dd
-  --token=token        (required) GitHub personal access token
-  --until=until        search commits created before yyyy-mm-dd
+  --baseUrl=baseUrl          [default: https://api.github.com] GitHub base url
+  --branch=branch            [default: master] git branch to export commits for
+  --format=(JSONL|JSON|CSV)  [default: JSONL] export format
+  --owner=owner              GitHub repository owner
+  --repo=repo                GitHub repository name
+  --since=since              search commits created after yyyy-mm-dd
+  --token=token              (required) GitHub personal access token
+  --until=until              search commits created before yyyy-mm-dd
 ```
 
 _See code: [src/commands/repo/commits.ts](https://github.com/github/github-artifact-exporter/blob/v2.0.1/packages/cli/src/commands/repo/commits.ts)_
@@ -137,11 +137,11 @@ USAGE
   $ github-artifacts-exporter repo:milestones
 
 OPTIONS
-  --baseUrl=baseUrl    [default: https://api.github.com] GitHub base url
-  --format=(JSON|CSV)  [default: JSON] export format
-  --owner=owner        GitHub repository owner
-  --repo=repo          GitHub repository name
-  --token=token        (required) GitHub personal access token
+  --baseUrl=baseUrl          [default: https://api.github.com] GitHub base url
+  --format=(JSONL|JSON|CSV)  [default: JSONL] export format
+  --owner=owner              GitHub repository owner
+  --repo=repo                GitHub repository name
+  --token=token              (required) GitHub personal access token
 ```
 
 _See code: [src/commands/repo/milestones.ts](https://github.com/github/github-artifact-exporter/blob/v2.0.1/packages/cli/src/commands/repo/milestones.ts)_
@@ -156,7 +156,7 @@ USAGE
 
 OPTIONS
   --baseUrl=baseUrl              [default: https://api.github.com] GitHub base url
-  --format=(JSON|CSV)            [default: JSON] export format
+  --format=(JSONL|JSON|CSV)      [default: JSONL] export format
   --owner=owner                  GitHub repository owner
   --projectNumber=projectNumber  Project number from where to pull cards
   --repo=repo                    GitHub repository name
@@ -174,11 +174,11 @@ USAGE
   $ github-artifacts-exporter repo:pulls
 
 OPTIONS
-  --baseUrl=baseUrl    [default: https://api.github.com] GitHub base url
-  --format=(JSON|CSV)  [default: JSON] export format
-  --owner=owner        (required) GitHub repository owner
-  --repo=repo          (required) GitHub repository name
-  --token=token        (required) GitHub personal access token
+  --baseUrl=baseUrl          [default: https://api.github.com] GitHub base url
+  --format=(JSONL|JSON|CSV)  [default: JSONL] export format
+  --owner=owner              (required) GitHub repository owner
+  --repo=repo                (required) GitHub repository name
+  --token=token              (required) GitHub personal access token
 ```
 
 _See code: [src/commands/repo/pulls.ts](https://github.com/github/github-artifact-exporter/blob/v2.0.1/packages/cli/src/commands/repo/pulls.ts)_
@@ -192,11 +192,11 @@ USAGE
   $ github-artifacts-exporter repo:releases
 
 OPTIONS
-  --baseUrl=baseUrl    [default: https://api.github.com] GitHub base url
-  --format=(JSON|CSV)  [default: JSON] export format
-  --owner=owner        GitHub repository owner
-  --repo=repo          GitHub repository name
-  --token=token        (required) GitHub personal access token
+  --baseUrl=baseUrl          [default: https://api.github.com] GitHub base url
+  --format=(JSONL|JSON|CSV)  [default: JSONL] export format
+  --owner=owner              GitHub repository owner
+  --repo=repo                GitHub repository name
+  --token=token              (required) GitHub personal access token
 ```
 
 _See code: [src/commands/repo/releases.ts](https://github.com/github/github-artifact-exporter/blob/v2.0.1/packages/cli/src/commands/repo/releases.ts)_
@@ -210,11 +210,11 @@ USAGE
   $ github-artifacts-exporter search
 
 OPTIONS
-  --baseUrl=baseUrl    [default: https://api.github.com] GitHub base url
-  --format=(JSON|CSV)  [default: JSON] export format
-  --owner=owner        GitHub repository owner
-  --repo=repo          GitHub repository name
-  --token=token        (required) GitHub personal access token
+  --baseUrl=baseUrl          [default: https://api.github.com] GitHub base url
+  --format=(JSONL|JSON|CSV)  [default: JSONL] export format
+  --owner=owner              GitHub repository owner
+  --repo=repo                GitHub repository name
+  --token=token              (required) GitHub personal access token
 ```
 
 _See code: [src/commands/search.ts](https://github.com/github/github-artifact-exporter/blob/v2.0.1/packages/cli/src/commands/search.ts)_
@@ -230,7 +230,7 @@ USAGE
 OPTIONS
   --baseUrl=baseUrl            [default: https://api.github.com] GitHub base url
   --dateFormat=dateFormat      [default: isoDateTime] Date format to use when building issue list.  Examples: mm/dd/yyyy
-  --format=(JSON|CSV)          [default: JSON] export format
+  --format=(JSONL|JSON|CSV)    [default: JSONL] export format
   --jira                       transform output into a usable format for importing to Jira
   --labels=labels              search issues with these labels (comma seperated)
   --owner=owner                GitHub repository owner

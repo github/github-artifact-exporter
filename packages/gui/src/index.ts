@@ -379,7 +379,13 @@ ipcMain.on("submit-export", async (event: any, form: any) => {
         issue.labels = issue.labels.map(({ name }) => name).join(", ");
       }
 
-      if (format === "JSON") {
+      if (format === "JSONL") {
+        const stream = fs.createWriteStream(file.filePath);
+        for (const issue of issues) {
+          stream.write(`${JSON.stringify(issue)}\n`);
+        }
+        stream.end();
+      } else if (format === "JSON") {
         fs.writeFileSync(file.filePath, JSON.stringify(issues));
       } else if (format === "CSV") {
         let mapHeaders: Function | null = null;

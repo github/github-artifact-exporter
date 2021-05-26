@@ -148,10 +148,12 @@ export default class RepoProjects extends BaseCommand {
       }
     }
 
-    if (format === "JSON") {
+    if (format === "JSONL") {
       for (const release of projects) {
         process.stdout.write(`${JSON.stringify(release)}\n`);
       }
+    } else if (format === "JSON") {
+      process.stdout.write(JSON.stringify(projects));
     } else if (format === "CSV") {
       const csv = await jsonexport(projects, { fillGaps: true });
       process.stdout.write(csv);

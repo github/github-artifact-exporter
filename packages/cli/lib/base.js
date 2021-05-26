@@ -57,8 +57,8 @@ Base.flags = {
         description: "GitHub repository name",
     }),
     format: command_1.flags.enum({
-        options: ["JSON", "CSV"],
-        default: "JSON",
+        options: ["JSONL", "JSON", "CSV"],
+        default: "JSONL",
         description: "export format",
     }),
 };
