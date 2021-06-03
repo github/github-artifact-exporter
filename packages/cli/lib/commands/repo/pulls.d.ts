@@ -6,6 +6,8 @@ export default class RepoPulls extends BaseCommand {
     static flags: {
         owner: flagTypes.IOptionFlag<string>;
         repo: flagTypes.IOptionFlag<string>;
+        since: flagTypes.IOptionFlag<string | undefined>;
+        until: flagTypes.IOptionFlag<string | undefined>;
         baseUrl: flagTypes.IOptionFlag<string>;
         token: flagTypes.IOptionFlag<string>;
         format: flagTypes.IOptionFlag<string>;
