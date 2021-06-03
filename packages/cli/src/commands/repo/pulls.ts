@@ -105,11 +105,16 @@ export default class RepoPulls extends BaseCommand {
       description: "GitHub repository owner",
       required: true,
     }),
-
     repo: flagTypes.string({
       dependsOn: ["owner"],
       description: "GitHub repository name",
       required: true,
+    }),
+    since: flagTypes.string({
+      description: "search pull requests created after yyyy-mm-dd",
+    }),
+    until: flagTypes.string({
+      description: "search pull requests created before yyyy-mm-dd",
     }),
   };
 
@@ -179,9 +184,21 @@ export default class RepoPulls extends BaseCommand {
 
   async run() {
     const { flags } = this.parse(RepoPulls);
-    const { owner, repo, format } = flags;
+    const { owner, repo, format, since, until } = flags;
 
-    const pulls = await this.fetchPulls(LIST_PULLS_QUERY, owner, repo);
+    let pulls = await this.fetchPulls(LIST_PULLS_QUERY, owner, repo);
+
+    // filter out pulls before since or after until
+    if (since) {
+      pulls = pulls.filter((pull) => {
+        return +new Date(pull.createdAt) >= +new Date(since);
+      });
+    }
+    if (until) {
+      pulls = pulls.filter((pull) => {
+        return +new Date(until) >= +new Date(pull.createdAt);
+      });
+    }
 
     const pullsWithComments = pulls.filter(
       (issue) => issue.comments.totalCount - issue.comments.nodes.length > 0
