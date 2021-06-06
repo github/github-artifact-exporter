@@ -6013,7 +6013,7 @@
           },
           {
             "name": "committedViaWeb",
-            "description": "Check if commited via GitHub web UI.",
+            "description": "Check if committed via GitHub web UI.",
             "args": [],
             "type": {
               "kind": "NON_NULL",

@@ -986,7 +986,7 @@ export declare type Commit = Node & GitObject & Subscribable & UniformResourceLo
     commitUrl: Scalars["URI"];
     /** The datetime when this commit was committed. */
     committedDate: Scalars["DateTime"];
-    /** Check if commited via GitHub web UI. */
+    /** Check if committed via GitHub web UI. */
     committedViaWeb: Scalars["Boolean"];
     /** Committership details of the commit. */
     committer?: Maybe<GitActor>;
