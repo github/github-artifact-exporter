@@ -20,7 +20,7 @@ export type Scalars = {
   GitTimestamp: any;
   /** A string containing HTML code. */
   HTML: any;
-  /** An ISO-8601 encoded UTC date string with millisecond precison. */
+  /** An ISO-8601 encoded UTC date string with millisecond precision. */
   PreciseDateTime: any;
   /** An RFC 3986, RFC 3987, and RFC 6570 (level 4) compliant URI string. */
   URI: any;

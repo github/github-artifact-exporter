@@ -52596,7 +52596,7 @@
       {
         "kind": "SCALAR",
         "name": "PreciseDateTime",
-        "description": "An ISO-8601 encoded UTC date string with millisecond precison.",
+        "description": "An ISO-8601 encoded UTC date string with millisecond precision.",
         "fields": null,
         "inputFields": null,
         "interfaces": null,

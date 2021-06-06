@@ -26,7 +26,7 @@ export type Scalars = {
   /** A string containing HTML code. */
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   HTML: any;
-  /** An ISO-8601 encoded UTC date string with millisecond precison. */
+  /** An ISO-8601 encoded UTC date string with millisecond precision. */
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   PreciseDateTime: any;
   /** An RFC 3986, RFC 3987, and RFC 6570 (level 4) compliant URI string. */
