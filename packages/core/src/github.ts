@@ -4524,7 +4524,7 @@ export enum GitSignatureState {
   ExpiredKey = "EXPIRED_KEY",
   /** Valid signature, pending certificate revocation checking */
   OcspPending = "OCSP_PENDING",
-  /** Valid siganture, though certificate revocation check failed */
+  /** Valid signature, though certificate revocation check failed */
   OcspError = "OCSP_ERROR",
   /** The signing certificate or its chain could not be verified */
   BadCert = "BAD_CERT",

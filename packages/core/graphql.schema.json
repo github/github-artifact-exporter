@@ -24827,7 +24827,7 @@
           },
           {
             "name": "OCSP_ERROR",
-            "description": "Valid siganture, though certificate revocation check failed",
+            "description": "Valid signature, though certificate revocation check failed",
             "isDeprecated": false,
             "deprecationReason": null
           },
