@@ -43,7 +43,7 @@ export default class SearchIssues extends SearchCommand {
       description: "search issues in this state",
     }),
     labels: flagTypes.string({
-      description: "search issues with these labels (comma seperated)",
+      description: "search issues with these labels (comma separated)",
     }),
     jira: flagTypes.boolean({
       description:
