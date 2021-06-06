@@ -8035,7 +8035,7 @@ export declare type OrganizationIdentityProvider = Node & {
     /** External Identities provisioned by this Identity Provider */
     externalIdentities: ExternalIdentityConnection;
     id: Scalars["ID"];
-    /** The x509 certificate used by the Identity Provder to sign assertions and responses. */
+    /** The x509 certificate used by the Identity Provider to sign assertions and responses. */
     idpCertificate?: Maybe<Scalars["X509Certificate"]>;
     /** The Issuer Entity ID for the SAML Identity Provider */
     issuer?: Maybe<Scalars["String"]>;

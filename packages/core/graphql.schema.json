@@ -49929,7 +49929,7 @@
           },
           {
             "name": "idpCertificate",
-            "description": "The x509 certificate used by the Identity Provder to sign assertions and responses.",
+            "description": "The x509 certificate used by the Identity Provider to sign assertions and responses.",
             "args": [],
             "type": {
               "kind": "SCALAR",
