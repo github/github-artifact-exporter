@@ -13162,7 +13162,7 @@ export declare type SmimeSignature = GitSignature & {
     /** True if the signature was made with GitHub's signing key. */
     wasSignedByGitHub: Scalars["Boolean"];
 };
-/** Entites that can sponsor others via GitHub Sponsors */
+/** Entities that can sponsor others via GitHub Sponsors */
 export declare type Sponsor = Organization | User;
 /** Entities that can be sponsored through GitHub Sponsors */
 export declare type Sponsorable = {
