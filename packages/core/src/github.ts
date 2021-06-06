@@ -12905,7 +12905,7 @@ export type RepoCreateAuditEntry = Node &
     createdAt: Scalars["PreciseDateTime"];
     /** The name of the parent repository for this forked repository. */
     forkParentName?: Maybe<Scalars["String"]>;
-    /** The name of the root repository for this netork. */
+    /** The name of the root repository for this network. */
     forkSourceName?: Maybe<Scalars["String"]>;
     id: Scalars["ID"];
     /** The corresponding operation type for the action */

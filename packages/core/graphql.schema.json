@@ -71611,7 +71611,7 @@
           },
           {
             "name": "forkSourceName",
-            "description": "The name of the root repository for this netork.",
+            "description": "The name of the root repository for this network.",
             "args": [],
             "type": {
               "kind": "SCALAR",
