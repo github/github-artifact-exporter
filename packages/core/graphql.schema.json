@@ -45333,7 +45333,7 @@
           },
           {
             "name": "restoredIssueAssignmentsCount",
-            "description": "The number of issue assignemnts for the restored member.",
+            "description": "The number of issue assignments for the restored member.",
             "args": [],
             "type": {
               "kind": "SCALAR",

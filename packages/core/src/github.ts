@@ -8258,7 +8258,7 @@ export type OrgRestoreMemberAuditEntry = Node &
     organizationUrl?: Maybe<Scalars["URI"]>;
     /** The number of custom email routings for the restored member. */
     restoredCustomEmailRoutingsCount?: Maybe<Scalars["Int"]>;
-    /** The number of issue assignemnts for the restored member. */
+    /** The number of issue assignments for the restored member. */
     restoredIssueAssignmentsCount?: Maybe<Scalars["Int"]>;
     /** Restored organization membership objects. */
     restoredMemberships?: Maybe<OrgRestoreMemberAuditEntryMembership[]>;
