@@ -78328,7 +78328,7 @@
           },
           {
             "name": "dismissedAt",
-            "description": "When was the alert dimissed?",
+            "description": "When was the alert dismissed?",
             "args": [],
             "type": {
               "kind": "SCALAR",

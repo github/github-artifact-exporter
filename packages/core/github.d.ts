@@ -14046,7 +14046,7 @@ export type RepositoryVulnerabilityAlert = Node &
     createdAt: Scalars["DateTime"];
     /** The reason the alert was dismissed */
     dismissReason?: Maybe<Scalars["String"]>;
-    /** When was the alert dimissed? */
+    /** When was the alert dismissed? */
     dismissedAt?: Maybe<Scalars["DateTime"]>;
     /** The user who dismissed the alert */
     dismisser?: Maybe<User>;
