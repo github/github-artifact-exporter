@@ -2018,7 +2018,7 @@ export type CreateTeamDiscussionInput = {
   title: Scalars["String"];
   /** The content of the discussion. */
   body: Scalars["String"];
-  /** If true, restricts the visiblity of this discussion to team members and organization admins. If false or not specified, allows any organization member to view this discussion. */
+  /** If true, restricts the visibility of this discussion to team members and organization admins. If false or not specified, allows any organization member to view this discussion. */
   private?: Maybe<Scalars["Boolean"]>;
   /** A unique identifier for the client performing the mutation. */
   clientMutationId?: Maybe<Scalars["String"]>;
