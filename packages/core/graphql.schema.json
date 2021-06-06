@@ -78396,7 +78396,7 @@
           },
           {
             "name": "securityVulnerability",
-            "description": "The associated security vulnerablity",
+            "description": "The associated security vulnerability",
             "args": [],
             "type": {
               "kind": "OBJECT",

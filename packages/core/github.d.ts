@@ -14055,7 +14055,7 @@ export type RepositoryVulnerabilityAlert = Node &
     repository: Repository;
     /** The associated security advisory */
     securityAdvisory?: Maybe<SecurityAdvisory>;
-    /** The associated security vulnerablity */
+    /** The associated security vulnerability */
     securityVulnerability?: Maybe<SecurityVulnerability>;
     /** The vulnerable manifest filename */
     vulnerableManifestFilename: Scalars["String"];
