@@ -259,7 +259,7 @@ export default class SearchIssues extends SearchCommand {
 
       if (jira) {
         // Jira expects all comments to have a header of just "comment"
-        // so we map commment0, comment1, comment2 etc to comment
+        // so we map comment0, comment1, comment2 etc to comment
         mapHeaders = function (header: string) {
           return header.replace(/comment[0-9]+/, "comment");
         };

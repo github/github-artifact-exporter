@@ -392,7 +392,7 @@ ipcMain.on("submit-export", async (event: any, form: any) => {
 
         if (jira) {
           // Jira expects all comments to have a header of just "comment"
-          // so we map commment0, comment1, comment2 etc to comment
+          // so we map comment0, comment1, comment2 etc to comment
           mapHeaders = function (subHeader: string) {
             return subHeader.replace(/comment[0-9]+/, "comment");
           };
