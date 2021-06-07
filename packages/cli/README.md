@@ -232,7 +232,7 @@ OPTIONS
   --dateFormat=dateFormat      [default: isoDateTime] Date format to use when building issue list.  Examples: mm/dd/yyyy
   --format=(JSONL|JSON|CSV)    [default: JSONL] export format
   --jira                       transform output into a usable format for importing to Jira
-  --labels=labels              search issues with these labels (comma seperated)
+  --labels=labels              search issues with these labels (comma separated)
   --owner=owner                GitHub repository owner
   --query=query                Search query matching GitHub issue search syntax
   --repo=repo                  GitHub repository name

@@ -23,7 +23,7 @@ export declare type Scalars = {
     GitTimestamp: any;
     /** A string containing HTML code. */
     HTML: any;
-    /** An ISO-8601 encoded UTC date string with millisecond precison. */
+    /** An ISO-8601 encoded UTC date string with millisecond precision. */
     PreciseDateTime: any;
     /** An RFC 3986, RFC 3987, and RFC 6570 (level 4) compliant URI string. */
     URI: any;
@@ -986,7 +986,7 @@ export declare type Commit = Node & GitObject & Subscribable & UniformResourceLo
     commitUrl: Scalars["URI"];
     /** The datetime when this commit was committed. */
     committedDate: Scalars["DateTime"];
-    /** Check if commited via GitHub web UI. */
+    /** Check if committed via GitHub web UI. */
     committedViaWeb: Scalars["Boolean"];
     /** Committership details of the commit. */
     committer?: Maybe<GitActor>;
@@ -1850,7 +1850,7 @@ export declare type CreateTeamDiscussionInput = {
     title: Scalars["String"];
     /** The content of the discussion. */
     body: Scalars["String"];
-    /** If true, restricts the visiblity of this discussion to team members and organization admins. If false or not specified, allows any organization member to view this discussion. */
+    /** If true, restricts the visibility of this discussion to team members and organization admins. If false or not specified, allows any organization member to view this discussion. */
     private?: Maybe<Scalars["Boolean"]>;
     /** A unique identifier for the client performing the mutation. */
     clientMutationId?: Maybe<Scalars["String"]>;
@@ -4127,7 +4127,7 @@ export declare enum GitSignatureState {
     ExpiredKey = "EXPIRED_KEY",
     /** Valid signature, pending certificate revocation checking */
     OcspPending = "OCSP_PENDING",
-    /** Valid siganture, though certificate revocation check failed */
+    /** Valid signature, though certificate revocation check failed */
     OcspError = "OCSP_ERROR",
     /** The signing certificate or its chain could not be verified */
     BadCert = "BAD_CERT",
@@ -7426,7 +7426,7 @@ export declare type OrgRestoreMemberAuditEntry = Node & AuditEntry & Organizatio
     organizationUrl?: Maybe<Scalars["URI"]>;
     /** The number of custom email routings for the restored member. */
     restoredCustomEmailRoutingsCount?: Maybe<Scalars["Int"]>;
-    /** The number of issue assignemnts for the restored member. */
+    /** The number of issue assignments for the restored member. */
     restoredIssueAssignmentsCount?: Maybe<Scalars["Int"]>;
     /** Restored organization membership objects. */
     restoredMemberships?: Maybe<OrgRestoreMemberAuditEntryMembership[]>;
@@ -8035,7 +8035,7 @@ export declare type OrganizationIdentityProvider = Node & {
     /** External Identities provisioned by this Identity Provider */
     externalIdentities: ExternalIdentityConnection;
     id: Scalars["ID"];
-    /** The x509 certificate used by the Identity Provder to sign assertions and responses. */
+    /** The x509 certificate used by the Identity Provider to sign assertions and responses. */
     idpCertificate?: Maybe<Scalars["X509Certificate"]>;
     /** The Issuer Entity ID for the SAML Identity Provider */
     issuer?: Maybe<Scalars["String"]>;
@@ -11528,7 +11528,7 @@ export declare type RepoCreateAuditEntry = Node & AuditEntry & RepositoryAuditEn
     createdAt: Scalars["PreciseDateTime"];
     /** The name of the parent repository for this forked repository. */
     forkParentName?: Maybe<Scalars["String"]>;
-    /** The name of the root repository for this netork. */
+    /** The name of the root repository for this network. */
     forkSourceName?: Maybe<Scalars["String"]>;
     id: Scalars["ID"];
     /** The corresponding operation type for the action */
@@ -12583,7 +12583,7 @@ export declare type RepositoryVulnerabilityAlert = Node & RepositoryNode & {
     createdAt: Scalars["DateTime"];
     /** The reason the alert was dismissed */
     dismissReason?: Maybe<Scalars["String"]>;
-    /** When was the alert dimissed? */
+    /** When was the alert dismissed? */
     dismissedAt?: Maybe<Scalars["DateTime"]>;
     /** The user who dismissed the alert */
     dismisser?: Maybe<User>;
@@ -12592,7 +12592,7 @@ export declare type RepositoryVulnerabilityAlert = Node & RepositoryNode & {
     repository: Repository;
     /** The associated security advisory */
     securityAdvisory?: Maybe<SecurityAdvisory>;
-    /** The associated security vulnerablity */
+    /** The associated security vulnerability */
     securityVulnerability?: Maybe<SecurityVulnerability>;
     /** The vulnerable manifest filename */
     vulnerableManifestFilename: Scalars["String"];
@@ -13162,7 +13162,7 @@ export declare type SmimeSignature = GitSignature & {
     /** True if the signature was made with GitHub's signing key. */
     wasSignedByGitHub: Scalars["Boolean"];
 };
-/** Entites that can sponsor others via GitHub Sponsors */
+/** Entities that can sponsor others via GitHub Sponsors */
 export declare type Sponsor = Organization | User;
 /** Entities that can be sponsored through GitHub Sponsors */
 export declare type Sponsorable = {
