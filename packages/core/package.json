@@ -1,48 +1,49 @@
 {
-  "name": "@github/github-artifact-exporter-core",
-  "version": "2.0.1",
-  "description": "> TODO: description",
-  "author": "Jason Macgowan2 <1389531+jasonmacgowan@users.noreply.github.com>",
-  "homepage": "",
-  "license": "MIT",
-  "main": "lib/core.js",
-  "typings": "lib/core.d.ts",
-  "directories": {
-    "lib": "lib",
-    "test": "__tests__"
-  },
-  "files": [
-    "lib"
-  ],
-  "dependencies": {
-    "@octokit/rest": "^18.0.7"
-  },
-  "devDependencies": {
-    "@graphql-codegen/cli": "1.15.4",
-    "@graphql-codegen/introspection": "^1.18.0",
-    "@graphql-codegen/typescript": "^1.17.11",
-    "@graphql-codegen/typescript-document-nodes": "^1.17.8",
-    "@graphql-codegen/typescript-graphql-files-modules": "^1.18.0",
-    "@graphql-codegen/typescript-operations": "^1.17.8",
-    "graphql": "^15.4.0",
-    "rimraf": "^3.0.2",
-    "tslib": "^2.0.3"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/github/github-artifact-exporter.git",
-    "directory": "packages/core"
-  },
-  "scripts": {
-    "build": "npm run clean && tsc",
-    "clean": "rimraf ./lib",
-    "graphql:codegen": "graphql-codegen --config codegen.yml",
-    "format": "prettier --write ."
-  },
-  "gitHead": "bebf4402de364eb82675f1ea2bf90085804881ee",
-  "pkg": {
-    "assets": [
-      "queries/**/*"
-    ]
-  }
+    "author": "Jason Macgowan2 <1389531+jasonmacgowan@users.noreply.github.com>",
+    "dependencies": {
+        "@octokit/rest": "^18.0.7"
+    },
+    "description": "> TODO: description",
+    "devDependencies": {
+        "@graphql-codegen/cli": "1.15.4",
+        "@graphql-codegen/introspection": "^1.18.0",
+        "@graphql-codegen/typescript": "^1.17.11",
+        "@graphql-codegen/typescript-document-nodes": "^1.17.8",
+        "@graphql-codegen/typescript-graphql-files-modules": "^1.18.0",
+        "@graphql-codegen/typescript-operations": "^1.17.8",
+        "graphql": "^15.4.0",
+        "rimraf": "^3.0.2",
+        "tslib": "^2.0.3"
+    },
+    "directories": {
+        "lib": "lib",
+        "test": "__tests__"
+    },
+    "files": [
+        "lib",
+        "queries"
+    ],
+    "gitHead": "bebf4402de364eb82675f1ea2bf90085804881ee",
+    "homepage": "",
+    "license": "MIT",
+    "main": "lib/core.js",
+    "name": "@github/github-artifact-exporter-core",
+    "pkg": {
+        "assets": [
+            "queries/**/*"
+        ]
+    },
+    "repository": {
+        "directory": "packages/core",
+        "type": "git",
+        "url": "git+https://github.com/github/github-artifact-exporter.git"
+    },
+    "scripts": {
+        "build": "npm run clean && tsc",
+        "clean": "rimraf ./lib",
+        "format": "prettier --write .",
+        "graphql:codegen": "graphql-codegen --config codegen.yml"
+    },
+    "typings": "lib/core.d.ts",
+    "version": "2.0.1"
 }
