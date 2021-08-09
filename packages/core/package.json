@@ -45,5 +45,5 @@
         "graphql:codegen": "graphql-codegen --config codegen.yml"
     },
     "typings": "lib/core.d.ts",
-    "version": "2.0.1"
+    "version": "2.0.2"
 }

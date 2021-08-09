@@ -25,7 +25,7 @@ $ npm install -g @github/github-artifact-exporter-cli
 $ github-artifacts-exporter COMMAND
 running command...
 $ github-artifacts-exporter (-v|--version|version)
-@github/github-artifact-exporter-cli/2.0.1 darwin-x64 node-v16.2.0
+@github/github-artifact-exporter-cli/2.0.2 darwin-x64 node-v14.4.0
 $ github-artifacts-exporter --help [COMMAND]
 USAGE
   $ github-artifacts-exporter COMMAND
@@ -105,7 +105,7 @@ OPTIONS
   --token=token              (required) GitHub personal access token
 ```
 
-_See code: [src/commands/repo.ts](https://github.com/github/github-artifact-exporter/blob/v2.0.1/src/commands/repo.ts)_
+_See code: [src/commands/repo.ts](https://github.com/github/github-artifact-exporter/blob/v2.0.2/src/commands/repo.ts)_
 
 ## `github-artifacts-exporter repo:commits`
 
@@ -126,7 +126,7 @@ OPTIONS
   --until=until              search commits created before yyyy-mm-dd
 ```
 
-_See code: [src/commands/repo/commits.ts](https://github.com/github/github-artifact-exporter/blob/v2.0.1/src/commands/repo/commits.ts)_
+_See code: [src/commands/repo/commits.ts](https://github.com/github/github-artifact-exporter/blob/v2.0.2/src/commands/repo/commits.ts)_
 
 ## `github-artifacts-exporter repo:milestones`
 
@@ -144,7 +144,7 @@ OPTIONS
   --token=token              (required) GitHub personal access token
 ```
 
-_See code: [src/commands/repo/milestones.ts](https://github.com/github/github-artifact-exporter/blob/v2.0.1/src/commands/repo/milestones.ts)_
+_See code: [src/commands/repo/milestones.ts](https://github.com/github/github-artifact-exporter/blob/v2.0.2/src/commands/repo/milestones.ts)_
 
 ## `github-artifacts-exporter repo:projects`
 
@@ -163,7 +163,7 @@ OPTIONS
   --token=token                  (required) GitHub personal access token
 ```
 
-_See code: [src/commands/repo/projects.ts](https://github.com/github/github-artifact-exporter/blob/v2.0.1/src/commands/repo/projects.ts)_
+_See code: [src/commands/repo/projects.ts](https://github.com/github/github-artifact-exporter/blob/v2.0.2/src/commands/repo/projects.ts)_
 
 ## `github-artifacts-exporter repo:pulls`
 
@@ -183,7 +183,7 @@ OPTIONS
   --until=until              search pull requests created before yyyy-mm-dd
 ```
 
-_See code: [src/commands/repo/pulls.ts](https://github.com/github/github-artifact-exporter/blob/v2.0.1/src/commands/repo/pulls.ts)_
+_See code: [src/commands/repo/pulls.ts](https://github.com/github/github-artifact-exporter/blob/v2.0.2/src/commands/repo/pulls.ts)_
 
 ## `github-artifacts-exporter repo:releases`
 
@@ -201,7 +201,7 @@ OPTIONS
   --token=token              (required) GitHub personal access token
 ```
 
-_See code: [src/commands/repo/releases.ts](https://github.com/github/github-artifact-exporter/blob/v2.0.1/src/commands/repo/releases.ts)_
+_See code: [src/commands/repo/releases.ts](https://github.com/github/github-artifact-exporter/blob/v2.0.2/src/commands/repo/releases.ts)_
 
 ## `github-artifacts-exporter search`
 
@@ -219,7 +219,7 @@ OPTIONS
   --token=token              (required) GitHub personal access token
 ```
 
-_See code: [src/commands/search.ts](https://github.com/github/github-artifact-exporter/blob/v2.0.1/src/commands/search.ts)_
+_See code: [src/commands/search.ts](https://github.com/github/github-artifact-exporter/blob/v2.0.2/src/commands/search.ts)_
 
 ## `github-artifacts-exporter search:issues`
 
@@ -234,7 +234,7 @@ OPTIONS
   --dateFormat=dateFormat      [default: isoDateTime] Date format to use when building issue list.  Examples: mm/dd/yyyy
   --format=(JSONL|JSON|CSV)    [default: JSONL] export format
   --jira                       transform output into a usable format for importing to Jira
-  --labels=labels              search issues with these labels (comma separated)
+  --labels=labels              search issues with these labels (comma seperated)
   --owner=owner                GitHub repository owner
   --query=query                Search query matching GitHub issue search syntax
   --repo=repo                  GitHub repository name
@@ -246,5 +246,5 @@ OPTIONS
   --updatedUntil=updatedUntil  search issues updated before yyyy-mm-dd
 ```
 
-_See code: [src/commands/search/issues.ts](https://github.com/github/github-artifact-exporter/blob/v2.0.1/src/commands/search/issues.ts)_
+_See code: [src/commands/search/issues.ts](https://github.com/github/github-artifact-exporter/blob/v2.0.2/src/commands/search/issues.ts)_
 <!-- commandsstop -->
