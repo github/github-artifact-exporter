@@ -47,7 +47,7 @@
   },
   "devDependencies": {
     "copyfiles": "^2.4.0",
-    "electron": "^11.5.0",
+    "electron": "^15.5.5",
     "electron-builder": "^22.9.1"
   },
   "build": {
