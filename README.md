@@ -1,3 +1,5 @@
+This project has been archived. Please use the GitHub CLI instead.
+
 # GitHub Exporter
 ![Node.js CI](https://github.com/github/github-artifact-exporter/workflows/Node.js%20CI/badge.svg) ![Create release](https://github.com/github/github-artifact-exporter/workflows/Create%20release/badge.svg) ![Build and upload release assets](https://github.com/github/github-artifact-exporter/workflows/Build%20and%20upload%20release%20assets/badge.svg)
 
