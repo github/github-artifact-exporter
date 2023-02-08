@@ -22,7 +22,7 @@
     "debug": "^4.2.0",
     "dot-object": "^2.1.4",
     "jsonexport": "^3.0.1",
-    "luxon": "^1.25.0",
+    "luxon": "^2.5.2",
     "progress": "^2.0.3",
     "tslib": "^1.14.1"
   },
